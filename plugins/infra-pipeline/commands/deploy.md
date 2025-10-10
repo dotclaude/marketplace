@@ -9,6 +9,70 @@ description: Orchestrate deployments with rollback strategies and health checks
 
 Orchestrate sophisticated infrastructure deployments with CI/CD best practices, automated rollback strategies, and comprehensive health checks. Manage blue-green, canary, rolling, and recreate deployment patterns across environments.
 
+## SECURITY WARNING
+
+**CRITICAL: Deployment operations have high-privilege access and can modify production systems.**
+
+Deployment scripts will:
+- Execute commands on production infrastructure
+- Modify load balancer configurations
+- Update database schemas or trigger migrations
+- Handle sensitive environment variables and secrets
+- Potentially cause service disruptions if misconfigured
+
+### Pre-Deployment Security Checklist
+
+BEFORE executing any deployment, verify:
+
+- [ ] **Credentials Management**: No secrets in code, use vaults or secret managers
+- [ ] **Access Control**: Deployment executed by authorized personnel only
+- [ ] **Change Approval**: Required approvals obtained for production deployments
+- [ ] **Rollback Plan**: Tested rollback procedure available
+- [ ] **Secrets Rotation**: No hardcoded credentials, proper secret injection
+- [ ] **Audit Logging**: All deployment actions logged with who/what/when
+- [ ] **Validation Gates**: Pre-deployment health checks passed
+- [ ] **Backup Verification**: Recent backup available before destructive operations
+- [ ] **Blast Radius**: Impact scope understood and limited
+- [ ] **Communication**: Relevant teams notified of deployment window
+
+### Deployment Security Best Practices
+
+1. **Secret Management**
+   - Use AWS Secrets Manager, HashiCorp Vault, or similar
+   - Rotate secrets regularly, especially after deployments
+   - Never log or echo secrets in deployment scripts
+   - Use scoped, short-lived credentials when possible
+
+2. **Least Privilege Deployment**
+   - Use service accounts with minimum required permissions
+   - Avoid deploying as root or with admin privileges
+   - Scope IAM roles to specific resources and actions
+   - Review and audit deployment permissions quarterly
+
+3. **Secure Communication**
+   - All deployment traffic over TLS/HTTPS
+   - Verify TLS certificates, don't disable validation
+   - Use VPN or bastion hosts for production access
+   - Implement network segmentation and firewalls
+
+4. **Validation & Safety**
+   - Dry-run mode to preview changes before execution
+   - Health checks at every stage of deployment
+   - Automated rollback triggers on error thresholds
+   - Database migrations in transactions when possible
+   - Blue-green keeps previous version running until validated
+
+### Red Flags to Never Ignore
+
+**STOP IMMEDIATELY if you see:**
+- Secrets hardcoded in deployment scripts
+- Deployment scripts with 777 permissions
+- Root credentials used for deployment
+- Deployment bypassing change approval process
+- No rollback strategy for production changes
+- Untested deployment to production
+- Missing health checks or monitoring
+
 ## How It Works
 
 This command invokes the deployment-coordinator agent to:
