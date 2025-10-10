@@ -43,3 +43,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+
+# Generated files
+wiki-github/
+scripts/catalog_validation.json

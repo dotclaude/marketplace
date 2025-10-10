@@ -8,7 +8,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 |---|--------|----------|----------|--------|----------|
 | 1 | [Cognitive Orchestration](#1-cognitive-orchestration) | Intelligence | 5 | 4 | Complex decisions |
 | 2 | [Adaptive Learning](#2-adaptive-learning) | Education | 6 | 4 | Learning concepts |
-| 3 | [Dev Accelerator](#3-dev-accelerator) | Development | 3 | 100+ | Development workflows |
+| 3 | [Dev Accelerator](#3-dev-accelerator) | Development | 15 | 12 | Development workflows |
 | 4 | [Insight Engine](#4-insight-engine) | Analysis | 3 | Dynamic | Innovation |
 | 5 | [Personalities](#5-personalities) | Analysis | 3 | 8 | Multi-persona analysis |
 | 6 | [Infra Pipeline](#6-infra-pipeline) | Infrastructure | 4 | 5 | AWS, CI/CD |
@@ -110,8 +110,8 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 - `/workflows:security-hardening` - Security review and hardening
 
 **Agents:**
-- 100+ specialized technical agents
-- Language-specific experts
+- 12 specialized technical agents (backend-architect, code-reviewer, debugger, devops-troubleshooter, frontend-developer, golang-pro, java-pro, python-pro, rust-pro, security-auditor, test-automator, typescript-pro)
+- Language-specific experts (Go, Java, Python, Rust, TypeScript)
 - Framework specialists
 - Security auditors
 

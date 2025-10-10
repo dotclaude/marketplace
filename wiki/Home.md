@@ -20,7 +20,7 @@ Welcome to the DotClaude Marketplace documentation! This wiki contains everythin
 
 ### Reference
 - **[Command Reference](./Command-Reference.md)** - All commands with examples
-- **[Agent Reference](./Agent-Reference.md)** - All 100+ agents documented
+- **[Agent Reference](./Agent-Reference.md)** - All 78 agents documented
 - **[Security Guide](./Security.md)** - Security best practices
 - **[Troubleshooting](./Troubleshooting.md)** - Common issues and solutions
 
@@ -58,7 +58,7 @@ Welcome to the DotClaude Marketplace documentation! This wiki contains everythin
 13. UX Product - UX design, product strategy
 14. Project Delivery - Agile, project management
 
-### 100+ Commands & 100+ Agents
+### 70+ Commands & 78 Agents
 
 Each plugin provides specialized commands and agents with unique expertise:
 - **Commands** - Slash commands for specific tasks

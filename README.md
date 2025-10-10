@@ -38,7 +38,7 @@ Master complex concepts with Socratic methodology and adaptive teaching that adj
 #### 3. [Dev Accelerator](./plugins/dev-accelerator)
 **Production-ready development workflows**
 
-TDD orchestration, feature development, security hardening with 100+ specialized technical agents.
+TDD orchestration, feature development, security hardening with comprehensive development workflows.
 
 **Key Commands**: `/workflows:tdd-cycle`, `/workflows:feature-development`, `/workflows:security-hardening`
 
@@ -302,8 +302,8 @@ Shell scripting, Unix pipelines, text processing (sed/awk/grep), permissions, an
 ## 📈 Statistics
 
 - **14 Plugins** covering the entire development lifecycle
-- **100+ Commands** for comprehensive workflows
-- **100+ Specialized Agents** with voice differentiation
+- **70+ Commands** for comprehensive workflows
+- **78 Specialized Agents** with voice differentiation
 - **Zero Configuration** - just install and use
 - **Security Hardened** - input validation, secrets management
 - **Production Ready** - used for real-world projects
@@ -349,4 +349,4 @@ MIT License - see [LICENSE](./LICENSE) file for details
 
 **Transform Claude Code into your complete development companion.** 🚀
 
-Install the marketplace and access 14 specialized plugins, 100+ commands, and 100+ expert agents for every stage of development.
+Install the marketplace and access 14 specialized plugins, 70+ commands, and 78 expert agents for every stage of development.

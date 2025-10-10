@@ -1,0 +1,99 @@
+name: Documentation Validation
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'plugins/**'
+      - 'README.md'
+      - 'wiki/**'
+      - 'scripts/validate_catalog.py'
+      - '.github/workflows/validate-docs.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'plugins/**'
+      - 'README.md'
+      - 'wiki/**'
+      - 'scripts/validate_catalog.py'
+      - '.github/workflows/validate-docs.yml'
+
+jobs:
+  validate:
+    name: Validate Plugin Catalog
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run validation script
+        id: validate
+        run: |
+          python3 scripts/validate_catalog.py
+          echo "✅ Documentation validation passed!"
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-validation-report
+          path: scripts/catalog_validation.json
+          retention-days: 30
+
+      - name: Comment on PR (if validation fails)
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const fs = require('fs');
+            let report = 'Documentation validation failed! ❌\n\n';
+
+            try {
+              const data = JSON.parse(fs.readFileSync('scripts/catalog_validation.json', 'utf8'));
+              report += `**Current Counts:**\n`;
+              report += `- Plugins: ${data.plugin_count}\n`;
+              report += `- Agents: ${data.total_agents}\n`;
+              report += `- Commands: ${data.total_commands}\n\n`;
+              report += `Please update documentation to reflect these accurate counts.`;
+            } catch (e) {
+              report += 'Could not load validation report.';
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
+
+      - name: Comment on PR (if validation passes)
+        if: success() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('scripts/catalog_validation.json', 'utf8'));
+
+            const report = `### ✅ Documentation Validation Passed!
+
+            **Current Counts:**
+            - 📦 Plugins: ${data.plugin_count}
+            - 🤖 Agents: ${data.total_agents}
+            - ⚡ Commands: ${data.total_commands}
+
+            All documentation accurately reflects the actual plugin catalog.`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
