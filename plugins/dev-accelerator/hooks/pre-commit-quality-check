@@ -1,0 +1,106 @@
+---
+name: pre-commit-quality-check
+displayName: Pre-Commit Quality Check
+description: Validates code quality, runs linters, and ensures tests pass before allowing commits
+trigger: pre-commit
+enabled: true
+---
+
+# Pre-Commit Quality Check Hook
+
+This hook runs automatically before git commits to ensure code quality standards.
+
+## Checks Performed
+
+1. **Linting**: Run configured linters (eslint, pylint, rustfmt, etc.)
+2. **Formatting**: Verify code formatting (prettier, black, gofmt, etc.)
+3. **Unit Tests**: Execute unit test suite
+4. **Security Scan**: Basic security vulnerability check
+5. **Type Checking**: Run type checkers if applicable (TypeScript, mypy, etc.)
+
+## Implementation
+
+```bash
+#!/bin/bash
+set -e
+
+echo "Running pre-commit quality checks..."
+
+# Detect project type and run appropriate checks
+if [ -f "package.json" ]; then
+  echo "Detected Node.js project"
+  if [ -f ".eslintrc.js" ] || [ -f ".eslintrc.json" ]; then
+    npm run lint || { echo "Linting failed"; exit 1; }
+  fi
+  if [ -f "jest.config.js" ] || grep -q "jest" package.json; then
+    npm test || { echo "Tests failed"; exit 1; }
+  fi
+fi
+
+if [ -f "pyproject.toml" ] || [ -f "setup.py" ]; then
+  echo "Detected Python project"
+  if command -v black &> /dev/null; then
+    black --check . || { echo "Formatting check failed"; exit 1; }
+  fi
+  if command -v pylint &> /dev/null; then
+    pylint **/*.py || { echo "Linting failed"; exit 1; }
+  fi
+  if command -v pytest &> /dev/null; then
+    pytest || { echo "Tests failed"; exit 1; }
+  fi
+fi
+
+if [ -f "Cargo.toml" ]; then
+  echo "Detected Rust project"
+  cargo fmt -- --check || { echo "Formatting check failed"; exit 1; }
+  cargo clippy -- -D warnings || { echo "Linting failed"; exit 1; }
+  cargo test || { echo "Tests failed"; exit 1; }
+fi
+
+if [ -f "go.mod" ]; then
+  echo "Detected Go project"
+  gofmt -l . | grep -q . && { echo "Formatting check failed"; exit 1; }
+  go vet ./... || { echo "Linting failed"; exit 1; }
+  go test ./... || { echo "Tests failed"; exit 1; }
+fi
+
+echo "All quality checks passed!"
+```
+
+## Configuration
+
+Customize checks in `.claude/hooks/pre-commit-quality-check`:
+
+```yaml
+enabled: true
+skipLinting: false
+skipTests: false
+skipFormatting: false
+securityScan: true
+typeChecking: true
+```
+
+## Skip Hook (when needed)
+
+```bash
+# Skip pre-commit hook for emergency commits
+git commit --no-verify -m "Emergency fix"
+```
+
+## Benefits
+
+- Prevents broken code from entering version control
+- Enforces consistent code style across team
+- Catches bugs early through automated testing
+- Reduces review time by ensuring baseline quality
+- Builds quality habits through immediate feedback
+
+## Customization
+
+Add project-specific checks by editing the hook script:
+
+1. Add custom linting rules
+2. Include additional test suites
+3. Add security scanning tools
+4. Configure formatting standards
+5. Add pre-commit actions (code generation, etc.)

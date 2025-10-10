@@ -1,50 +1,64 @@
 {
-  "name": "dotclaude-marketplace",
-  "displayName": "DotClaude Plugin Marketplace",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dotclaude-plugins",
   "version": "1.0.0",
   "description": "Revolutionary AI interaction platform featuring cognitive orchestration, adaptive learning, development workflows, and meta-cognitive analysis. Transform Claude Code into an advanced cognitive amplification system.",
-  "owner": "dotclaude",
-  "repository": "https://github.com/dotclaude/marketplace",
+  "owner": {
+    "name": "DotClaude",
+    "url": "https://github.com/dotclaude"
+  },
   "plugins": [
     {
       "name": "cognitive-orchestration",
-      "source": "dotclaude/cognitive-orchestration",
-      "displayName": "Cognitive Orchestration Framework",
       "description": "Maximum cognitive diversity orchestration with multi-expert collaboration, structured disagreement, and breakthrough thinking protocols.",
-      "category": "productivity",
+      "source": "./plugins/cognitive-orchestration",
       "version": "1.0.0",
-      "featured": true,
-      "tags": ["orchestration", "multi-expert", "decision-making", "breakthrough-thinking"]
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["orchestration", "multi-expert", "decision-making", "breakthrough-thinking"]
     },
     {
       "name": "adaptive-learning",
-      "source": "dotclaude/adaptive-learning",
-      "displayName": "Adaptive Learning & Development",
       "description": "Transformative learning through scaffolded discovery, Socratic methodology, and adaptive teaching that adjusts to learner sophistication in real-time.",
-      "category": "education",
+      "source": "./plugins/adaptive-learning",
       "version": "1.0.0",
-      "featured": true,
-      "tags": ["learning", "teaching", "socratic-method", "skill-building"]
+      "category": "education",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["learning", "teaching", "socratic-method", "skill-building"]
     },
     {
       "name": "dev-accelerator",
-      "source": "dotclaude/dev-accelerator",
-      "displayName": "Development Accelerator",
       "description": "Production-ready development workflows with TDD orchestration, feature development, security hardening, and 100+ specialized technical agents.",
-      "category": "development",
+      "source": "./plugins/dev-accelerator",
       "version": "1.0.0",
-      "featured": true,
-      "tags": ["development", "tdd", "workflows", "security", "code-quality"]
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["development", "tdd", "workflows", "security", "code-quality"]
     },
     {
       "name": "insight-engine",
-      "source": "dotclaude/insight-engine",
-      "displayName": "Insight & Analysis Engine",
       "description": "Meta-cognitive analysis through assumption auditing, knowledge synthesis, and pattern discovery for breakthrough thinking.",
-      "category": "productivity",
+      "source": "./plugins/insight-engine",
       "version": "1.0.0",
-      "featured": false,
-      "tags": ["analysis", "synthesis", "meta-cognitive", "pattern-discovery"]
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["analysis", "synthesis", "meta-cognitive", "pattern-discovery"]
     }
   ],
   "categories": [
