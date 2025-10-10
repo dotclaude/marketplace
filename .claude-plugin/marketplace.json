@@ -72,6 +72,123 @@
       },
       "license": "MIT",
       "keywords": ["multi-persona", "split-team", "cognitive-harmonics", "collaborative-intelligence", "perspective-analysis"]
+    },
+    {
+      "name": "infra-pipeline",
+      "description": "Complete infrastructure lifecycle from IaC to deployment. Master AWS, Terraform, CI/CD pipelines, GitOps workflows, and deployment automation.",
+      "source": "./plugins/infra-pipeline",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["infrastructure", "cicd", "deployment", "automation", "terraform", "aws", "gitops", "iac", "devops"]
+    },
+    {
+      "name": "observability-ops",
+      "description": "Production reliability and observability. Master Datadog, CloudWatch, monitoring, incident response, SRE practices, and audit logging.",
+      "source": "./plugins/observability-ops",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["monitoring", "observability", "datadog", "cloudwatch", "incident-response", "auditing", "compliance", "sre"]
+    },
+    {
+      "name": "frontend-excellence",
+      "description": "Modern React and UI development. Master React 19, Next.js 15, component architecture, state management, and performance optimization.",
+      "source": "./plugins/frontend-excellence",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["react", "nextjs", "frontend", "ui", "components", "performance", "state-management"]
+    },
+    {
+      "name": "backend-security",
+      "description": "Backend development with security-first approach. Master REST/GraphQL APIs, OWASP security, LLM integration, and authentication systems.",
+      "source": "./plugins/backend-security",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["api", "security", "llm", "authentication", "backend", "owasp", "rest", "graphql"]
+    },
+    {
+      "name": "data-intelligence",
+      "description": "Data engineering and time series analysis. Expert in jq, SQL, pandas, time series forecasting, ETL pipelines, and analytics.",
+      "source": "./plugins/data-intelligence",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["data", "timeseries", "analytics", "jq", "etl", "forecasting", "streaming"]
+    },
+    {
+      "name": "queue-orchestrator",
+      "description": "Message queues and distributed systems. Master queue theory, RabbitMQ, SQS, Kafka, async processing, and backpressure.",
+      "source": "./plugins/queue-orchestrator",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["queues", "messaging", "async", "distributed-systems", "backpressure", "kafka", "rabbitmq"]
+    },
+    {
+      "name": "ux-product",
+      "description": "User-centered design and product excellence. Master user research, UX design, accessibility, product strategy, and journey mapping.",
+      "source": "./plugins/ux-product",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["ux", "product", "accessibility", "user-research", "design", "product-strategy", "a11y"]
+    },
+    {
+      "name": "project-delivery",
+      "description": "Project orchestration from planning to delivery. Master Scrum, Kanban, sprint planning, roadmaps, and stakeholder management.",
+      "source": "./plugins/project-delivery",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["agile", "project-management", "scrum", "planning", "delivery", "stakeholders"]
+    },
+    {
+      "name": "cli-mastery",
+      "description": "Command-line excellence and Unix wizardry. Expert in shell scripting, Unix pipelines, text processing, and CLI tool composition.",
+      "source": "./plugins/cli-mastery",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["cli", "unix", "shell", "bash", "pipes", "sed", "awk", "grep", "scripting"]
     }
   ],
   "categories": [

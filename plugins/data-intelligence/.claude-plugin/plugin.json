@@ -1,0 +1,44 @@
+{
+  "name": "data-intelligence",
+  "displayName": "Data Intelligence & Analytics",
+  "version": "1.0.0",
+  "description": "Data engineering and time series analysis mastery. Expert in jq, SQL, pandas, time series forecasting, ETL pipelines, streaming, and analytics visualization.",
+  "author": {
+    "name": "DotClaude",
+    "url": "https://github.com/dotclaude"
+  },
+  "repository": "https://github.com/dotclaude/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "data",
+    "timeseries",
+    "analytics",
+    "jq",
+    "etl",
+    "forecasting",
+    "streaming",
+    "sql",
+    "pandas"
+  ],
+  "category": "productivity",
+  "components": {
+    "commands": [
+      "data",
+      "timeseries",
+      "analytics",
+      "etl"
+    ],
+    "agents": [
+      "data-engineer",
+      "timeseries-specialist",
+      "analytics-expert",
+      "streaming-architect",
+      "ml-engineer"
+    ]
+  },
+  "configuration": {
+    "defaultDataProcessingEngine": "pandas",
+    "enableStreamingSupport": true,
+    "enableMLIntegration": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "project-delivery",
+  "displayName": "Agile Project Delivery",
+  "version": "1.0.0",
+  "description": "Project orchestration from planning to delivery. Master Scrum, Kanban, sprint planning, roadmaps, retrospectives, team metrics, and stakeholder management.",
+  "author": {
+    "name": "DotClaude",
+    "url": "https://github.com/dotclaude"
+  },
+  "repository": "https://github.com/dotclaude/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "agile",
+    "project-management",
+    "scrum",
+    "planning",
+    "delivery",
+    "stakeholders",
+    "kanban",
+    "sprint"
+  ],
+  "category": "productivity",
+  "components": {
+    "commands": [
+      "plan",
+      "roadmap",
+      "retro",
+      "metrics",
+      "stakeholder"
+    ],
+    "agents": [
+      "agile-coach",
+      "project-manager",
+      "estimation-specialist",
+      "team-optimizer",
+      "stakeholder-liaison"
+    ]
+  },
+  "configuration": {
+    "defaultSprintLength": 2,
+    "enableMetricsTracking": true,
+    "enableStakeholderNotifications": true
+  }
+}

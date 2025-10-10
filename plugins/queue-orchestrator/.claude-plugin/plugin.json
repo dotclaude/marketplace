@@ -1,0 +1,43 @@
+{
+  "name": "queue-orchestrator",
+  "displayName": "Queue Theory & Async Systems",
+  "version": "1.0.0",
+  "description": "Message queues and distributed systems expertise. Master queue theory, RabbitMQ, SQS, Kafka, async processing, backpressure, and distributed system patterns.",
+  "author": {
+    "name": "DotClaude",
+    "url": "https://github.com/dotclaude"
+  },
+  "repository": "https://github.com/dotclaude/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "queues",
+    "messaging",
+    "async",
+    "distributed-systems",
+    "backpressure",
+    "throughput",
+    "kafka",
+    "rabbitmq"
+  ],
+  "category": "development",
+  "components": {
+    "commands": [
+      "queue",
+      "async",
+      "backpressure",
+      "distributed"
+    ],
+    "agents": [
+      "queue-theorist",
+      "message-architect",
+      "async-specialist",
+      "backpressure-expert",
+      "distributed-systems-expert"
+    ]
+  },
+  "configuration": {
+    "defaultQueueSystem": "rabbitmq",
+    "enableBackpressureAnalysis": true,
+    "enableDistributedTracing": true
+  }
+}
