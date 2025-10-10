@@ -59,6 +59,19 @@
       },
       "license": "MIT",
       "keywords": ["analysis", "synthesis", "meta-cognitive", "pattern-discovery"]
+    },
+    {
+      "name": "personalities",
+      "description": "Multi-persona analysis framework using split-team principles with cognitive harmonics, productive disagreement, and 7 specialized persona agents for multidimensional problem solving.",
+      "source": "./plugins/personalities",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["multi-persona", "split-team", "cognitive-harmonics", "collaborative-intelligence", "perspective-analysis"]
     }
   ],
   "categories": [
