@@ -1,7 +1,7 @@
 ---
 model: claude-sonnet-4-0
 allowed-tools: Task
-argument-hint: <proposition-or-claim> [--intensity=<level>]
+argument-hint: <proposition-or-claim> [intensity-level]
 description: Structured debate with opposing personas examining a proposition from multiple angles through productive disagreement
 ---
 
@@ -22,7 +22,7 @@ This command creates a debate-focused analysis where:
 
 **$1 (Required)**: Proposition, claim, or approach to debate
 
-**--intensity** (Optional): Level of challenging scrutiny
+**$2 (Optional)**: Level of challenging scrutiny
 - `balanced`: Respectful challenge with alternatives (default)
 - `rigorous`: Systematic assumption testing
 - `maximum`: Aggressive first-principles questioning
@@ -37,13 +37,13 @@ Personas explore benefits, challenges, alternatives, and contexts where the prop
 
 ### Rigorous Scrutiny
 ```bash
-/debate "TypeScript provides better developer experience than JavaScript" --intensity=rigorous
+/debate "TypeScript provides better developer experience than JavaScript" rigorous
 ```
 Deep assumption testing, edge case exploration, systematic challenge of premises.
 
 ### Maximum Challenge
 ```bash
-/debate "Code review improves code quality" --intensity=maximum
+/debate "Code review improves code quality" maximum
 ```
 First-principles questioning, counterintuitive alternatives, paradigm-level examination.
 
@@ -124,7 +124,7 @@ First-principles questioning, counterintuitive alternatives, paradigm-level exam
 ## Example Session
 
 ```bash
-/debate "We should prioritize velocity over code quality to meet market deadlines" --intensity=rigorous
+/debate "We should prioritize velocity over code quality to meet market deadlines" rigorous
 ```
 
 **Result**: Personas systematically challenge this false dichotomy, explore hidden assumptions (quality vs. velocity trade-off, technical debt impact), generate alternatives (quality-enabling speed, incremental quality), and synthesize nuanced guidance about when to optimize for speed vs. when quality accelerates delivery.

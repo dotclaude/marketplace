@@ -1,7 +1,7 @@
 ---
 model: claude-sonnet-4-0
 allowed-tools: Task
-argument-hint: <problem-or-question> [--complexity=<level>] [--perspectives=<count>]
+argument-hint: <problem-or-question> [complexity-level] [perspective-count]
 description: Multi-persona analysis using split-team framework with cognitive harmonics and productive disagreement
 ---
 
@@ -22,12 +22,12 @@ This command invokes the persona-coordinator agent to:
 
 **$1 (Required)**: Problem statement or question to analyze
 
-**--complexity** (Optional): Problem complexity level
+**$2 (Optional)**: Complexity level
 - `simple`: 3-4 personas, straightforward analysis
 - `moderate`: 5-6 personas, balanced trade-offs (default)
 - `complex`: 7+ personas, multifaceted challenges
 
-**--perspectives** (Optional): Number of personas (3-10)
+**$3 (Optional)**: Number of personas (3-10)
 - Overrides complexity-based team size
 - Must be between 3 and 10
 
@@ -35,7 +35,7 @@ This command invokes the persona-coordinator agent to:
 
 ### Simple Analysis
 ```bash
-/analyze "Should we use REST or GraphQL for our API?" --complexity=simple
+/analyze "Should we use REST or GraphQL for our API?" simple
 ```
 Assembles: Analytical Thinker + Pragmatic Realist + Systems Architect
 
@@ -47,13 +47,13 @@ Assembles: Systems Architect + Risk Analyst + User Advocate + Pragmatic Realist 
 
 ### Complex Analysis
 ```bash
-/analyze "Should we migrate from monolith to microservices?" --complexity=complex
+/analyze "Should we migrate from monolith to microservices?" complex
 ```
 Assembles: Systems Architect + Risk Analyst + Pragmatic Realist + Creative Innovator + Constructive Critic + User Advocate + Analytical Thinker
 
 ### Custom Team Size
 ```bash
-/analyze "Evaluate our tech stack choices" --perspectives=6
+/analyze "Evaluate our tech stack choices" moderate 6
 ```
 Assembles: 6 most relevant personas for the problem
 
@@ -112,7 +112,7 @@ Assembles: 6 most relevant personas for the problem
 ## Example Session
 
 ```bash
-/analyze "We need to choose between PostgreSQL and MongoDB for user data storage. We have 10M users, need strong consistency, but want flexibility for future features." --complexity=moderate
+/analyze "We need to choose between PostgreSQL and MongoDB for user data storage. We have 10M users, need strong consistency, but want flexibility for future features." moderate
 ```
 
 **Result**: Assembles 5 personas who examine through data/performance (Analytical Thinker), implementation reality (Pragmatic Realist), system architecture (Systems Architect), risk factors (Risk Analyst), and challenges assumptions (Constructive Critic). Synthesis provides clear recommendation with rationale and acknowledged trade-offs.

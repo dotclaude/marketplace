@@ -1,7 +1,7 @@
 ---
 model: claude-sonnet-4-0
 allowed-tools: Task
-argument-hint: <solution-or-proposal> [--criteria=<focus-areas>]
+argument-hint: <solution-or-proposal> [focus-areas]
 description: Multi-persona evaluation of solutions or proposals through diverse expert lenses with comprehensive assessment
 ---
 
@@ -22,7 +22,7 @@ This command creates evaluation-focused analysis where:
 
 **$1 (Required)**: Solution, proposal, or design to evaluate
 
-**--criteria** (Optional): Focus areas for evaluation (comma-separated)
+**$2 (Optional)**: Focus areas for evaluation (comma-separated)
 - Examples: `security,performance`, `usability,scalability`, `cost,maintainability`
 - If not specified, uses comprehensive multi-dimensional assessment
 
@@ -36,13 +36,13 @@ Comprehensive assessment from all relevant perspectives.
 
 ### Focused Evaluation
 ```bash
-/evaluate "Authentication via JWT tokens stored in localStorage" --criteria=security,usability
+/evaluate "Authentication via JWT tokens stored in localStorage" security,usability
 ```
 Security and user experience focused assessment.
 
 ### Architecture Evaluation
 ```bash
-/evaluate "Microservices with event-driven communication via Kafka" --criteria=scalability,complexity,reliability
+/evaluate "Microservices with event-driven communication via Kafka" scalability,complexity,reliability
 ```
 Focused on scale, complexity, and reliability dimensions.
 
@@ -156,13 +156,13 @@ Each persona evaluates through their lens:
 1. **Provide Context**: Include goals, constraints, alternatives considered
 2. **Be Specific**: Detailed proposals get detailed assessments
 3. **State Priorities**: Mention what's most important (speed vs. quality, etc.)
-4. **Include Criteria**: Use --criteria for focused evaluation
+4. **Include Criteria**: Use second argument for focused evaluation
 5. **Expect Balanced**: Good solutions have trade-offs; perfect solutions don't exist
 
 ## Example Session
 
 ```bash
-/evaluate "We'll implement real-time features using WebSockets with Redis pub/sub for scaling across servers. Fallback to long-polling for older browsers." --criteria=scalability,reliability,complexity
+/evaluate "We'll implement real-time features using WebSockets with Redis pub/sub for scaling across servers. Fallback to long-polling for older browsers." scalability,reliability,complexity
 ```
 
 **Result**: Systems Architect assesses scalability approach, Risk Analyst evaluates reliability and failure modes, Pragmatic Realist considers implementation complexity, Constructive Critic challenges assumptions about scaling needs. Synthesis provides balanced assessment with improvement suggestions like connection management, monitoring strategies, and fallback testing.
