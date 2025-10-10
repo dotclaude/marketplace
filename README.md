@@ -64,12 +64,10 @@ Challenge assumptions, synthesize knowledge, and discover patterns for paradigm-
 
 ## 📦 Quick Installation
 
-### Install Everything
-```bash
-# Add the marketplace
-/plugin marketplace add dotclaude/marketplace
+### Install Directly from GitHub
 
-# Install all plugins
+```bash
+# Install any plugin directly
 /plugin install dotclaude/cognitive-orchestration
 /plugin install dotclaude/adaptive-learning
 /plugin install dotclaude/dev-accelerator
@@ -86,6 +84,9 @@ Challenge assumptions, synthesize knowledge, and discover patterns for paradigm-
 
 # Decision-making only
 /plugin install dotclaude/cognitive-orchestration
+
+# Meta-cognitive analysis
+/plugin install dotclaude/insight-engine
 ```
 
 ## 🎯 Use Case Guide
@@ -148,19 +149,17 @@ Combine plugins for maximum capability:
 
 ## 🚀 Getting Started
 
-1. **Add the Marketplace**
-   ```bash
-   /plugin marketplace add dotclaude/marketplace
-   ```
+1. **Browse Plugins**
+   Visit [github.com/dotclaude](https://github.com/dotclaude) to explore available plugins
 
-2. **Browse Plugins**
-   View available plugins and their descriptions
+2. **Install Plugins**
+   Use `/plugin install dotclaude/<plugin-name>` to install directly from GitHub
 
-3. **Install Plugins**
-   Choose plugins based on your needs
+3. **Start Using Commands**
+   Each plugin adds new slash commands and agents immediately
 
-4. **Start Using Commands**
-   Each plugin adds new slash commands and agents
+4. **Update Plugins**
+   Plugins can be updated when new versions are released
 
 ## 🎨 Example Workflows
 
