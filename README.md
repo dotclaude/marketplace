@@ -1,5 +1,11 @@
 # DotClaude Plugin Marketplace
 
+[![Plugins](https://img.shields.io/badge/plugins-14-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
+[![Agents](https://img.shields.io/badge/agents-78-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
+[![Commands](https://img.shields.io/badge/commands-70+-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
+[![Documentation](https://img.shields.io/badge/docs-validated-success?style=flat-square)](https://github.com/dotclaude/marketplace/actions)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
+
 **Complete development ecosystem with 14 specialized plugins**
 
 Transform Claude Code into a comprehensive cognitive amplification system covering everything from infrastructure to UX, data processing to project management.
