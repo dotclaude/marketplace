@@ -1,6 +1,5 @@
 {
   "name": "backend-security",
-  "displayName": "Backend & Security Excellence",
   "version": "1.0.0",
   "description": "Backend development with security-first approach. Master REST/GraphQL APIs, OWASP security, LLM integration, authentication systems, and secure coding practices.",
   "author": {
@@ -8,6 +7,7 @@
     "url": "https://github.com/dotclaude"
   },
   "repository": "https://github.com/dotclaude/marketplace",
+  "license": "MIT",
   "keywords": [
     "api",
     "security",
@@ -18,22 +18,5 @@
     "rest",
     "graphql",
     "auth"
-  ],
-  "category": "development",
-  "components": {
-    "commands": [
-      "api",
-      "security",
-      "llm",
-      "auth"
-    ],
-    "agents": [
-      "api-architect",
-      "security-guardian",
-      "llm-integrator",
-      "auth-specialist",
-      "backend-expert"
-    ]
-  },
-  "license": "MIT"
+  ]
 }

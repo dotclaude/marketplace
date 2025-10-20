@@ -1,6 +1,5 @@
 {
   "name": "observability-ops",
-  "displayName": "Observability & Operations Excellence",
   "version": "1.0.0",
   "description": "Production reliability and observability across all environments. Master Datadog, CloudWatch, monitoring, incident response, SRE practices, and audit logging for enterprise compliance.",
   "author": {
@@ -19,29 +18,5 @@
     "compliance",
     "sre",
     "reliability"
-  ],
-  "category": "development",
-  "components": {
-    "commands": [
-      "monitor",
-      "trace",
-      "incident",
-      "slo",
-      "audit"
-    ],
-    "agents": [
-      "datadog-specialist",
-      "cloudwatch-expert",
-      "sre-engineer",
-      "performance-analyst",
-      "log-aggregator",
-      "compliance-auditor"
-    ]
-  },
-  "configuration": {
-    "defaultMonitoringPlatform": "datadog",
-    "enableDistributedTracing": true,
-    "enableIncidentResponse": true,
-    "enableComplianceAuditing": true
-  }
+  ]
 }

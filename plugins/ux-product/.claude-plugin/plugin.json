@@ -1,6 +1,5 @@
 {
   "name": "ux-product",
-  "displayName": "UX & Product Strategy",
   "version": "1.0.0",
   "description": "User-centered design and product excellence. Master user research, UX design, accessibility, product strategy, user journey mapping, and inclusive design practices.",
   "author": {
@@ -18,26 +17,5 @@
     "product-strategy",
     "a11y",
     "user-journey"
-  ],
-  "category": "productivity",
-  "components": {
-    "commands": [
-      "ux",
-      "product",
-      "user-research",
-      "journey"
-    ],
-    "agents": [
-      "ux-designer",
-      "product-strategist",
-      "accessibility-expert",
-      "user-researcher",
-      "interaction-designer"
-    ]
-  },
-  "configuration": {
-    "enableAccessibilityChecks": true,
-    "enableUserResearch": true,
-    "enableProductStrategy": true
-  }
+  ]
 }

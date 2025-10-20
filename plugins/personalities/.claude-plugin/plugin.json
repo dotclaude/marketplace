@@ -1,6 +1,5 @@
 {
   "name": "personalities",
-  "displayName": "Multi-Persona Analysis Framework",
   "version": "1.0.0",
   "description": "Split-team framework implementation with multiple specialized persona agents for multidimensional problem analysis through cognitive harmonics and productive disagreement.",
   "author": {
@@ -14,28 +13,5 @@
     "cognitive-harmonics",
     "perspective-analysis",
     "collaborative-intelligence"
-  ],
-  "category": "productivity",
-  "components": {
-    "commands": [
-      "analyze",
-      "debate",
-      "evaluate"
-    ],
-    "agents": [
-      "persona-coordinator",
-      "analytical-thinker",
-      "creative-innovator",
-      "pragmatic-realist",
-      "constructive-critic",
-      "systems-architect",
-      "user-advocate",
-      "risk-analyst"
-    ]
-  },
-  "configuration": {
-    "defaultTeamSize": 5,
-    "enableVoiceDifferentiation": true,
-    "enableProductiveDisagreement": true
-  }
+  ]
 }

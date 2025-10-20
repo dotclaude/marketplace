@@ -1,6 +1,5 @@
 {
   "name": "frontend-excellence",
-  "displayName": "Frontend Excellence & React Mastery",
   "version": "1.0.0",
   "description": "Modern React and UI development expertise. Master React 19, Next.js 15, component architecture, state management, performance optimization, and design systems.",
   "author": {
@@ -18,27 +17,5 @@
     "performance",
     "state-management",
     "design-systems"
-  ],
-  "category": "development",
-  "components": {
-    "commands": [
-      "react",
-      "ui",
-      "frontend",
-      "state"
-    ],
-    "agents": [
-      "react-specialist",
-      "component-architect",
-      "frontend-optimizer",
-      "state-manager",
-      "css-expert"
-    ]
-  },
-  "configuration": {
-    "defaultFramework": "react19",
-    "enableTypeScript": true,
-    "enableAccessibility": true,
-    "enablePerformanceOptimization": true
-  }
+  ]
 }

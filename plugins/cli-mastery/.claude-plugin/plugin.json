@@ -1,6 +1,5 @@
 {
   "name": "cli-mastery",
-  "displayName": "CLI Excellence & Unix Wizardry",
   "version": "1.0.0",
   "description": "Command-line excellence and Unix philosophy mastery. Expert in shell scripting, Unix pipelines, text processing (sed/awk/grep), permissions, and CLI tool composition.",
   "author": {
@@ -20,28 +19,5 @@
     "grep",
     "permissions",
     "scripting"
-  ],
-  "category": "development",
-  "components": {
-    "commands": [
-      "cli",
-      "pipe",
-      "shell",
-      "permissions",
-      "text"
-    ],
-    "agents": [
-      "cli-wizard",
-      "pipe-architect",
-      "shell-scripter",
-      "permissions-guardian",
-      "text-surgeon",
-      "process-manager"
-    ]
-  },
-  "configuration": {
-    "enableUnixPhilosophy": true,
-    "enablePipelineOptimization": true,
-    "enableSecurityGuidance": true
-  }
+  ]
 }

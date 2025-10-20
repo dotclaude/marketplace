@@ -1,6 +1,5 @@
 {
   "name": "infra-pipeline",
-  "displayName": "Infrastructure & Deployment Pipeline",
   "version": "1.0.0",
   "description": "Complete infrastructure lifecycle management from IaC to deployment. Master AWS, Terraform, CI/CD pipelines, GitOps workflows, and deployment automation for both home projects and enterprise systems.",
   "author": {
@@ -8,6 +7,7 @@
     "url": "https://github.com/dotclaude"
   },
   "repository": "https://github.com/dotclaude/marketplace",
+  "license": "MIT",
   "keywords": [
     "infrastructure",
     "cicd",
@@ -18,22 +18,5 @@
     "gitops",
     "iac",
     "devops"
-  ],
-  "category": "development",
-  "components": {
-    "commands": [
-      "deploy",
-      "infra",
-      "pipeline",
-      "automate"
-    ],
-    "agents": [
-      "infra-architect",
-      "cicd-engineer",
-      "automation-specialist",
-      "deployment-coordinator",
-      "gitops-expert"
-    ]
-  },
-  "license": "MIT"
+  ]
 }
