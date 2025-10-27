@@ -189,6 +189,19 @@
       },
       "license": "MIT",
       "keywords": ["cli", "unix", "shell", "bash", "pipes", "sed", "awk", "grep", "scripting"]
+    },
+    {
+      "name": "interview-assist",
+      "description": "Master Staff+ and Principal level interviews. Comprehensive interview preparation with coding, system design, behavioral coaching, side-effects engineering, technical communication, leadership scenarios, and realistic mock interviews.",
+      "source": "./plugins/interview-assist",
+      "version": "1.0.0",
+      "category": "education",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["interviews", "staff-engineer", "principal-engineer", "system-design", "coding", "behavioral", "leadership", "mock-interviews", "side-effects-engineering"]
     }
   ],
   "categories": [
