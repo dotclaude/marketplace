@@ -1,6 +1,6 @@
 # Plugin Catalog
 
-Complete reference for all 14 DotClaude Marketplace plugins.
+Complete reference for all 15 DotClaude Marketplace plugins.
 
 ## 📦 Quick Reference Table
 
@@ -8,18 +8,19 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 |---|--------|----------|----------|--------|----------|
 | 1 | [Cognitive Orchestration](#1-cognitive-orchestration) | Intelligence | 5 | 4 | Complex decisions |
 | 2 | [Adaptive Learning](#2-adaptive-learning) | Education | 6 | 4 | Learning concepts |
-| 3 | [Dev Accelerator](#3-dev-accelerator) | Development | 15 | 12 | Development workflows |
-| 4 | [Insight Engine](#4-insight-engine) | Analysis | 3 | Dynamic | Innovation |
-| 5 | [Personalities](#5-personalities) | Analysis | 3 | 8 | Multi-persona analysis |
-| 6 | [Infra Pipeline](#6-infra-pipeline) | Infrastructure | 4 | 5 | AWS, CI/CD |
-| 7 | [Observability Ops](#7-observability-ops) | Operations | 5 | 6 | Monitoring, SRE |
-| 8 | [Frontend Excellence](#8-frontend-excellence) | Development | 4 | 5 | React, UI |
-| 9 | [Backend Security](#9-backend-security) | Development | 4 | 5 | APIs, Security |
-| 10 | [Data Intelligence](#10-data-intelligence) | Data | 4 | 5 | Data processing |
-| 11 | [Queue Orchestrator](#11-queue-orchestrator) | Systems | 4 | 5 | Message queues |
-| 12 | [UX Product](#12-ux-product) | Product | 4 | 5 | UX, Product |
-| 13 | [Project Delivery](#13-project-delivery) | Management | 5 | 5 | Agile, Projects |
-| 14 | [CLI Mastery](#14-cli-mastery) | Tools | 5 | 6 | Unix, Shell |
+| 3 | [Interview Assist](#3-interview-assist) | Education | 8 | 8 | Senior interviews |
+| 4 | [Dev Accelerator](#4-dev-accelerator) | Development | 15 | 12 | Development workflows |
+| 5 | [Insight Engine](#5-insight-engine) | Analysis | 3 | Dynamic | Innovation |
+| 6 | [Personalities](#6-personalities) | Analysis | 3 | 8 | Multi-persona analysis |
+| 7 | [Infra Pipeline](#7-infra-pipeline) | Infrastructure | 4 | 5 | AWS, CI/CD |
+| 8 | [Observability Ops](#8-observability-ops) | Operations | 5 | 6 | Monitoring, SRE |
+| 9 | [Frontend Excellence](#9-frontend-excellence) | Development | 4 | 5 | React, UI |
+| 10 | [Backend Security](#10-backend-security) | Development | 4 | 5 | APIs, Security |
+| 11 | [Data Intelligence](#11-data-intelligence) | Data | 4 | 5 | Data processing |
+| 12 | [Queue Orchestrator](#12-queue-orchestrator) | Systems | 4 | 5 | Message queues |
+| 13 | [UX Product](#13-ux-product) | Product | 4 | 5 | UX, Product |
+| 14 | [Project Delivery](#14-project-delivery) | Management | 5 | 5 | Agile, Projects |
+| 15 | [CLI Mastery](#15-cli-mastery) | Tools | 5 | 6 | Unix, Shell |
 
 ---
 
@@ -97,7 +98,55 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
-### 3. Dev Accelerator
+### 3. Interview Assist
+
+**Master Staff+ and Principal level interviews with structured preparation**
+
+**Category:** Education
+**Complexity:** Advanced
+
+**Commands:**
+- `/interview-assist:coding` - Practice coding problems with brute-force → optimized solutions
+- `/interview-assist:system-design` - Design systems with full analysis and diagrams
+- `/interview-assist:behavioral` - Prepare for behavioral and competency questions
+- `/interview-assist:whiteboard` - Practice technical communication and whiteboarding
+- `/interview-assist:leadership` - Tackle Staff+/Principal leadership scenarios
+- `/interview-assist:strategy` - Develop interview strategy for specific companies
+- `/interview-assist:side-effects` - Master side-effect decomposition methodology
+- `/interview-assist:mock` - Run full realistic mock interview simulations
+
+**Agents:**
+- behavioral-coach - STAR method with Staff+/Principal examples
+- coding-coach - Brute-force to optimized solution evolution
+- interview-strategist - Company research and interview strategy
+- leadership-scenarios-coach - Staff+ and Principal scenarios
+- mock-interviewer - Full mock interview simulations
+- side-effects-engineer - Side-effect decomposition methodology
+- system-design-architect - Complete system design framework
+- technical-communicator - Whiteboarding and explanation skills
+
+**Use Cases:**
+- Coding interview preparation
+- System design mastery
+- Senior leadership interview prep
+- Side-effect thinking and architecture
+- Behavioral question preparation
+- Full mock interview simulations
+- Interview strategy for specific companies
+
+**Example:**
+```bash
+/interview-assist:coding "Two Sum" --level=staff
+/interview-assist:system-design "Design Twitter" --depth=deep
+/interview-assist:behavioral "Handle disagreement" --level=principal
+/interview-assist:mock "system-design" --level=principal
+```
+
+**[Full Documentation →](../plugins/interview-assist/README.md)**
+
+---
+
+### 4. Dev Accelerator
 
 **Production-ready development workflows**
 
@@ -130,7 +179,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
-### 4. Insight Engine
+### 5. Insight Engine
 
 **Meta-cognitive analysis for breakthrough thinking**
 
@@ -161,7 +210,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
-### 5. Personalities
+### 6. Personalities
 
 **Multi-persona analysis with cognitive harmonics**
 
@@ -200,7 +249,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ## Infrastructure & Operations
 
-### 6. Infra Pipeline
+### 7. Infra Pipeline
 
 **Infrastructure lifecycle from IaC to deployment**
 
@@ -236,7 +285,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
-### 7. Observability Ops
+### 8. Observability Ops
 
 **Production reliability and comprehensive observability**
 
@@ -276,7 +325,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ## Development Tools
 
-### 8. Frontend Excellence
+### 9. Frontend Excellence
 
 **Modern React and UI development**
 
@@ -312,7 +361,7 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
-### 9. Backend Security
+### 10. Backend Security
 
 **Backend development with security-first approach**
 
@@ -345,44 +394,6 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 ```
 
 **[Full Documentation →](../plugins/backend-security/README.md)**
-
----
-
-### 10. CLI Mastery
-
-**Command-line excellence and Unix wizardry**
-
-**Category:** Development
-**Complexity:** Beginner-Intermediate
-
-**Commands:**
-- `/cli` - CLI tool selection
-- `/pipe` - Unix pipeline design
-- `/shell` - Shell script creation
-- `/permissions` - Unix permissions
-- `/text` - Text processing (sed/awk/grep)
-
-**Agents:**
-- cli-wizard - 10+ years terminal native
-- pipe-architect - Pipeline design
-- shell-scripter - Bash/Zsh scripting
-- permissions-guardian - Unix permissions
-- text-surgeon - sed/awk/grep master
-- process-manager - Process control
-
-**Use Cases:**
-- Shell automation
-- Unix pipelines
-- Text processing
-- Permission management
-
-**Example:**
-```bash
-/pipe "Extract errors from logs and count by type"
-/shell "Backup database with rotation" production
-```
-
-**[Full Documentation →](../plugins/cli-mastery/README.md)**
 
 ---
 
@@ -498,11 +509,27 @@ Complete reference for all 14 DotClaude Marketplace plugins.
 
 ---
 
+### 13. UX Product
+
+**User-centered design and product excellence**
+
+**Category:** Productivity
+
+---
+
 ### 14. Project Delivery
 
 **Agile project orchestration**
 
 **Category:** Productivity
+
+---
+
+### 15. CLI Mastery
+
+**Command-line excellence and Unix wizardry**
+
+**Category:** Development
 **Complexity:** Beginner-Intermediate
 
 **Commands:**

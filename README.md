@@ -1,27 +1,27 @@
 # DotClaude Plugin Marketplace
 
-[![Plugins](https://img.shields.io/badge/plugins-14-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
+[![Plugins](https://img.shields.io/badge/plugins-15-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
 [![Agents](https://img.shields.io/badge/agents-78-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
 [![Commands](https://img.shields.io/badge/commands-70+-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
 [![Documentation](https://img.shields.io/badge/docs-validated-success?style=flat-square)](https://github.com/dotclaude/marketplace/actions)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
 
-**Complete development ecosystem with 14 specialized plugins**
+**Complete development ecosystem with 15 specialized plugins**
 
 Transform Claude Code into a comprehensive cognitive amplification system covering everything from infrastructure to UX, data processing to project management.
 
 ## 🚀 Quick Start
 
 ```bash
-# Install the complete marketplace (all 14 plugins)
+# Install the complete marketplace (all 15 plugins)
 /plugin marketplace add dotclaude/marketplace
 
 # All plugins automatically available!
 ```
 
-## 📦 Complete Plugin Ecosystem (14 Plugins)
+## 📦 Complete Plugin Ecosystem (15 Plugins)
 
-### Core Intelligence Plugins (1-5)
+### Core Intelligence & Learning (1-6)
 
 #### 1. [Cognitive Orchestration](./plugins/cognitive-orchestration)
 **Multi-expert decision-making with breakthrough thinking**
@@ -41,7 +41,16 @@ Master complex concepts with Socratic methodology and adaptive teaching that adj
 
 ---
 
-#### 3. [Dev Accelerator](./plugins/dev-accelerator)
+#### 3. [Interview Assist](./plugins/interview-assist) ⭐ NEW
+**Master Staff+ and Principal level interviews**
+
+Comprehensive interview preparation for senior engineers with coding, system design, behavioral coaching, leadership scenarios, side-effects engineering, and realistic mock interviews.
+
+**Key Commands**: `/interview-assist:coding`, `/interview-assist:system-design`, `/interview-assist:behavioral`, `/interview-assist:mock`
+
+---
+
+#### 4. [Dev Accelerator](./plugins/dev-accelerator)
 **Production-ready development workflows**
 
 TDD orchestration, feature development, security hardening with comprehensive development workflows.
@@ -50,7 +59,7 @@ TDD orchestration, feature development, security hardening with comprehensive de
 
 ---
 
-#### 4. [Insight Engine](./plugins/insight-engine)
+#### 5. [Insight Engine](./plugins/insight-engine)
 **Meta-cognitive analysis for breakthrough thinking**
 
 Challenge assumptions, synthesize knowledge, discover patterns for paradigm-shifting insights.
@@ -59,7 +68,7 @@ Challenge assumptions, synthesize knowledge, discover patterns for paradigm-shif
 
 ---
 
-#### 5. [Personalities](./plugins/personalities)
+#### 6. [Personalities](./plugins/personalities)
 **Multi-persona analysis with cognitive harmonics**
 
 Split-team framework with 7 specialized personas for multidimensional problem-solving through productive disagreement.
@@ -68,9 +77,9 @@ Split-team framework with 7 specialized personas for multidimensional problem-so
 
 ---
 
-### Infrastructure & Operations (6-7)
+### Infrastructure & Operations (7-8)
 
-#### 6. [Infra Pipeline](./plugins/infra-pipeline) ⭐ NEW
+#### 7. [Infra Pipeline](./plugins/infra-pipeline) ⭐ NEW
 **Infrastructure lifecycle from IaC to deployment**
 
 Master AWS, Terraform, CI/CD pipelines, GitOps workflows, and deployment automation for home projects and enterprise systems.
@@ -80,7 +89,7 @@ Master AWS, Terraform, CI/CD pipelines, GitOps workflows, and deployment automat
 
 ---
 
-#### 7. [Observability Ops](./plugins/observability-ops) ⭐ NEW
+#### 8. [Observability Ops](./plugins/observability-ops) ⭐ NEW
 **Production reliability and comprehensive observability**
 
 Datadog, CloudWatch, monitoring, incident response, SRE practices, and audit logging for enterprise compliance.
@@ -90,9 +99,9 @@ Datadog, CloudWatch, monitoring, incident response, SRE practices, and audit log
 
 ---
 
-### Frontend & Backend Development (8-9)
+### Frontend & Backend Development (9-10)
 
-#### 8. [Frontend Excellence](./plugins/frontend-excellence) ⭐ NEW
+#### 9. [Frontend Excellence](./plugins/frontend-excellence) ⭐ NEW
 **Modern React and UI development expertise**
 
 React 19, Next.js 15, component architecture, state management, performance optimization, and design systems.
@@ -102,7 +111,7 @@ React 19, Next.js 15, component architecture, state management, performance opti
 
 ---
 
-#### 9. [Backend Security](./plugins/backend-security) ⭐ NEW
+#### 10. [Backend Security](./plugins/backend-security) ⭐ NEW
 **Backend development with security-first approach**
 
 REST/GraphQL APIs, OWASP security, LLM integration, authentication systems, and secure coding practices.
@@ -112,9 +121,9 @@ REST/GraphQL APIs, OWASP security, LLM integration, authentication systems, and 
 
 ---
 
-### Data & Distributed Systems (10-11)
+### Data & Distributed Systems (11-12)
 
-#### 10. [Data Intelligence](./plugins/data-intelligence) ⭐ NEW
+#### 11. [Data Intelligence](./plugins/data-intelligence) ⭐ NEW
 **Data engineering and time series analysis**
 
 Expert in jq, SQL, pandas, time series forecasting, ETL pipelines, streaming, and analytics visualization.
@@ -124,7 +133,7 @@ Expert in jq, SQL, pandas, time series forecasting, ETL pipelines, streaming, an
 
 ---
 
-#### 11. [Queue Orchestrator](./plugins/queue-orchestrator) ⭐ NEW
+#### 12. [Queue Orchestrator](./plugins/queue-orchestrator) ⭐ NEW
 **Message queues and distributed systems expertise**
 
 Queue theory, RabbitMQ, SQS, Kafka, async processing, backpressure, and distributed system patterns.
@@ -134,9 +143,9 @@ Queue theory, RabbitMQ, SQS, Kafka, async processing, backpressure, and distribu
 
 ---
 
-### Product & Project Management (12-13)
+### Product & Project Management (13-14)
 
-#### 12. [UX Product](./plugins/ux-product) ⭐ NEW
+#### 13. [UX Product](./plugins/ux-product) ⭐ NEW
 **User-centered design and product excellence**
 
 User research, UX design, accessibility (WCAG), product strategy, user journey mapping, and inclusive design.
@@ -146,7 +155,7 @@ User research, UX design, accessibility (WCAG), product strategy, user journey m
 
 ---
 
-#### 13. [Project Delivery](./plugins/project-delivery) ⭐ NEW
+#### 14. [Project Delivery](./plugins/project-delivery) ⭐ NEW
 **Agile project orchestration from planning to delivery**
 
 Scrum, Kanban, sprint planning, roadmaps, retrospectives, team metrics, and stakeholder management.
@@ -156,9 +165,9 @@ Scrum, Kanban, sprint planning, roadmaps, retrospectives, team metrics, and stak
 
 ---
 
-### Developer Tools (14)
+### Developer Tools (15)
 
-#### 14. [CLI Mastery](./plugins/cli-mastery) ⭐ NEW
+#### 15. [CLI Mastery](./plugins/cli-mastery) ⭐ NEW
 **Command-line excellence from a 10+ year terminal native**
 
 Shell scripting, Unix pipelines, text processing (sed/awk/grep), permissions, and CLI tool composition.

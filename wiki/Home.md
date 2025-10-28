@@ -2,7 +2,7 @@
 
 **Your comprehensive guide to the complete Claude Code plugin ecosystem**
 
-Welcome to the DotClaude Marketplace documentation! This wiki contains everything you need to install, configure, and master all 14 plugins.
+Welcome to the DotClaude Marketplace documentation! This wiki contains everything you need to install, configure, and master all 15 plugins.
 
 ## 🚀 Quick Navigation
 
@@ -32,31 +32,32 @@ Welcome to the DotClaude Marketplace documentation! This wiki contains everythin
 
 ## 📦 What's in the Marketplace?
 
-### 14 Specialized Plugins
+### 15 Specialized Plugins
 
-**Core Intelligence (5 plugins)**
+**Core Intelligence & Learning (6 plugins)**
 1. Cognitive Orchestration - Multi-expert decision-making
 2. Adaptive Learning - Transformative learning
-3. Dev Accelerator - Development workflows
-4. Insight Engine - Meta-cognitive analysis
-5. Personalities - Multi-persona analysis
+3. Interview Assist - Staff+/Principal interview preparation
+4. Dev Accelerator - Development workflows
+5. Insight Engine - Meta-cognitive analysis
+6. Personalities - Multi-persona analysis
 
 **Infrastructure & Operations (2 plugins)**
-6. Infra Pipeline - AWS, Terraform, CI/CD
-7. Observability Ops - Monitoring, SRE, compliance
+7. Infra Pipeline - AWS, Terraform, CI/CD
+8. Observability Ops - Monitoring, SRE, compliance
 
-**Development (3 plugins)**
-8. Frontend Excellence - React, Next.js, UI
-9. Backend Security - APIs, security, LLM
-10. CLI Mastery - Unix, shell scripting
-
-**Data & Systems (2 plugins)**
+**Development (4 plugins)**
+9. Frontend Excellence - React, Next.js, UI
+10. Backend Security - APIs, security, LLM
 11. Data Intelligence - jq, SQL, time series
-12. Queue Orchestrator - Message queues, distributed systems
+12. CLI Mastery - Unix, shell scripting
+
+**Systems & Messaging (1 plugin)**
+13. Queue Orchestrator - Message queues, distributed systems
 
 **Product & Project (2 plugins)**
-13. UX Product - UX design, product strategy
-14. Project Delivery - Agile, project management
+14. UX Product - UX design, product strategy
+15. Project Delivery - Agile, project management
 
 ### 70+ Commands & 78 Agents
 
