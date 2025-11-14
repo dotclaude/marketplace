@@ -2,9 +2,9 @@
 
 **Auto-generated command reference for DotClaude Marketplace**
 
-Total Commands: **70** across **14** plugins
+Total Commands: **82** across **16** plugins
 
-Last Updated: 2025-10-10 08:48:19
+Last Updated: 2025-11-14 11:48:33
 
 ---
 
@@ -19,11 +19,13 @@ Last Updated: 2025-10-10 08:48:19
 - [Frontend Excellence](#frontend-excellence) (4 commands)
 - [Infra Pipeline](#infra-pipeline) (4 commands)
 - [Insight Engine](#insight-engine) (3 commands)
+- [Interview Assist](#interview-assist) (8 commands)
 - [Observability Ops](#observability-ops) (5 commands)
 - [Personalities](#personalities) (3 commands)
 - [Project Delivery](#project-delivery) (5 commands)
 - [Queue Orchestrator](#queue-orchestrator) (4 commands)
 - [Ux Product](#ux-product) (4 commands)
+- [Yt Transcribe](#yt-transcribe) (4 commands)
 
 ---
 
@@ -689,6 +691,115 @@ Integrate knowledge from multiple sources to generate emergent insights, identif
 
 ---
 
+## Interview Assist
+
+**Plugin:** `interview-assist`  
+**Commands:** 8
+
+### `/commands:behavioral`
+
+Master the behavioral/competency interview with STAR method stories calibrated for Staff+ engineers. Focus on demonstrating technical judgment, leadership, and impact.
+
+**Location:** `.claude/commands/interview-assist/commands/behavioral.md`
+
+**Example:**
+```bash
+/commands:behavioral <args>
+```
+
+---
+
+### `/commands:coding`
+
+Guide through a coding problem with evolution from brute-force to optimized solution. Includes talking points, complexity analysis, and pattern recognition for Staff+ interviews.
+
+**Location:** `.claude/commands/interview-assist/commands/coding.md`
+
+**Example:**
+```bash
+/commands:coding <args>
+```
+
+---
+
+### `/commands:leadership`
+
+Master the unique interview challenges at Staff+ and Principal levels. These aren't IC technical contributions—they're about strategic influence, organizational thinking, and transformational impact.
+
+**Location:** `.claude/commands/interview-assist/commands/leadership.md`
+
+**Example:**
+```bash
+/commands:leadership <args>
+```
+
+---
+
+### `/commands:mock`
+
+Run realistic interview simulations with adaptive questioning, real-time feedback, and comprehensive performance scoring. Test your readiness before the real thing.
+
+**Location:** `.claude/commands/interview-assist/commands/mock.md`
+
+**Example:**
+```bash
+/commands:mock <args>
+```
+
+---
+
+### `/commands:side-effects`
+
+Learn to dissolve problems by recognizing primitive side effects and composing them for emergent properties. Based on the philosophy: instead of solving problems, design substrates where problems can't exist.
+
+**Location:** `.claude/commands/interview-assist/commands/side-effects.md`
+
+**Example:**
+```bash
+/commands:side-effects <args>
+```
+
+---
+
+### `/commands:strategy`
+
+Develop a tailored strategy for your specific company and role. Understand what they're looking for, predict likely questions, and create a preparation plan.
+
+**Location:** `.claude/commands/interview-assist/commands/strategy.md`
+
+**Example:**
+```bash
+/commands:strategy <args>
+```
+
+---
+
+### `/commands:system-design`
+
+Complete framework for designing systems from problem to implementation. Includes WHY/WHAT/HOW structure, trade-off analysis, mermaid diagrams, and deep-dive optimizations.
+
+**Location:** `.claude/commands/interview-assist/commands/system-design.md`
+
+**Example:**
+```bash
+/commands:system-design <args>
+```
+
+---
+
+### `/commands:whiteboard`
+
+Learn to think out loud, explain complex concepts clearly, and communicate your technical thinking in real time during interviews.
+
+**Location:** `.claude/commands/interview-assist/commands/whiteboard.md`
+
+**Example:**
+```bash
+/commands:whiteboard <args>
+```
+
+---
+
 ## Observability Ops
 
 **Plugin:** `observability-ops`  
@@ -983,6 +1094,63 @@ User experience research, design, and usability optimization
 **Example:**
 ```bash
 /commands:ux <args>
+```
+
+---
+
+## Yt Transcribe
+
+**Plugin:** `yt-transcribe`  
+**Commands:** 4
+
+### `/commands:yt-analyze`
+
+Inspect and analyze a YouTube video without downloading it. Get detailed metadata, assess transcribability, check available captions, and generate quality reports.
+
+**Location:** `.claude/commands/yt-transcribe/commands/yt-analyze.md`
+
+**Example:**
+```bash
+/commands:yt-analyze <args>
+```
+
+---
+
+### `/commands:yt-download`
+
+Download a YouTube video using yt-dlp with support for JavaScript-protected content, flexible format selection, and optional post-processing.
+
+**Location:** `.claude/commands/yt-transcribe/commands/yt-download.md`
+
+**Example:**
+```bash
+/commands:yt-download <args>
+```
+
+---
+
+### `/commands:yt-fetch-transcript`
+
+Retrieve the transcript from a YouTube video using the fastest available method. Supports YouTube's native transcript API, fallback providers, and speech-to-text.
+
+**Location:** `.claude/commands/yt-transcribe/commands/yt-fetch-transcript.md`
+
+**Example:**
+```bash
+/commands:yt-fetch-transcript <args>
+```
+
+---
+
+### `/commands:yt-transcribe`
+
+Transcribe a YouTube video, fetch the transcript, and extract key insights and summaries.
+
+**Location:** `.claude/commands/yt-transcribe/commands/yt-transcribe.md`
+
+**Example:**
+```bash
+/commands:yt-transcribe <args>
 ```
 
 ---

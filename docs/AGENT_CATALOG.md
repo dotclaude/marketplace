@@ -2,9 +2,9 @@
 
 **Auto-generated agent reference for DotClaude Marketplace**
 
-Total Agents: **78** across **14** plugins
+Total Agents: **90** across **16** plugins
 
-Last Updated: 2025-10-10 08:48:19
+Last Updated: 2025-11-14 11:48:33
 
 ---
 
@@ -19,11 +19,13 @@ Last Updated: 2025-10-10 08:48:19
 - [Frontend Excellence](#frontend-excellence) (5 agents)
 - [Infra Pipeline](#infra-pipeline) (5 agents)
 - [Insight Engine](#insight-engine) (3 agents)
+- [Interview Assist](#interview-assist) (8 agents)
 - [Observability Ops](#observability-ops) (6 agents)
 - [Personalities](#personalities) (8 agents)
 - [Project Delivery](#project-delivery) (5 agents)
 - [Queue Orchestrator](#queue-orchestrator) (5 agents)
 - [Ux Product](#ux-product) (5 agents)
+- [Yt Transcribe](#yt-transcribe) (4 agents)
 
 ---
 
@@ -513,6 +515,83 @@ Multi-source insight integration with emergent pattern recognition. Integrates k
 
 ---
 
+## Interview Assist
+
+**Plugin:** `interview-assist`  
+**Agents:** 8
+
+### behavioral-coach
+
+Master behavioral and competency interview questions with STAR method. Includes Staff+ and Principal level story templates calibrated for senior engineers.
+
+**Model:** `claude-sonnet-4-0`  
+**Location:** `.claude/agents/behavioral-coach.md`
+
+---
+
+### coding-coach
+
+Master coding interview problems with brute-force to optimized solution evolution. Includes complexity analysis, talking points, and pattern recognition. Perfect for Staff+ interview prep.
+
+**Model:** `claude-sonnet-4-0`  
+**Location:** `.claude/agents/coding-coach.md`
+
+---
+
+### interview-strategist
+
+Develop interview strategy for specific companies and roles. Analyze company type, predict questions, create preparation plans, and align your story to their needs.
+
+**Model:** `claude-sonnet-4-0`  
+**Location:** `.claude/agents/interview-strategist.md`
+
+---
+
+### leadership-scenarios-coach
+
+Master Staff+ and Principal leadership scenarios. Handle technical strategy, influence without authority, difficult people situations, and organizational impact.
+
+**Model:** `claude-opus-4-1`  
+**Location:** `.claude/agents/leadership-scenarios-coach.md`
+
+---
+
+### mock-interviewer
+
+Run realistic mock interviews with adaptive questioning, real-time feedback, and performance scoring. Combines all interview skills in a full simulation.
+
+**Model:** `claude-opus-4-1`  
+**Location:** `.claude/agents/mock-interviewer.md`
+
+---
+
+### side-effects-engineer
+
+Master side-effect decomposition methodology from your engineering philosophy. Learn to dissolve problems by composing primitives with emergent properties. Perfect for Staff+ system design interviews.
+
+**Model:** `claude-sonnet-4-0`  
+**Location:** `.claude/agents/side-effects-engineer.md`
+
+---
+
+### system-design-architect
+
+Design complete systems with WHY, WHAT, HOW, CONSIDERATIONS, and DEEP-DIVE framework. Generates mermaid diagrams with visual system architecture. Perfect for Staff+ system design interviews.
+
+**Model:** `claude-opus-4-1`  
+**Location:** `.claude/agents/system-design-architect.md`
+
+---
+
+### technical-communicator
+
+Master whiteboarding and technical communication for interviews. Learn to explain complex concepts clearly, handle clarifying questions, and pace your thinking.
+
+**Model:** `claude-sonnet-4-0`  
+**Location:** `.claude/agents/technical-communicator.md`
+
+---
+
 ## Observability Ops
 
 **Plugin:** `observability-ops`  
@@ -799,14 +878,55 @@ User experience design specialist. Use PROACTIVELY for UX research and design.
 
 ---
 
+## Yt Transcribe
+
+**Plugin:** `yt-transcribe`  
+**Agents:** 4
+
+### media-downloader
+
+Manages yt-dlp operations, handles video downloads, format conversion, and quality selection. Use PROACTIVELY for download tasks.
+
+**Model:** `sonnet`  
+**Location:** `.claude/agents/media-downloader.md`
+
+---
+
+### transcript-fetcher
+
+Retrieves transcripts via YouTube API, fallback methods, and speech-to-text processing. Use PROACTIVELY for transcript acquisition.
+
+**Model:** `sonnet`  
+**Location:** `.claude/agents/transcript-fetcher.md`
+
+---
+
+### transcript-processor
+
+Analyzes transcripts, extracts key points, creates summaries, and identifies themes. Use PROACTIVELY for transcript analysis.
+
+**Model:** `sonnet`  
+**Location:** `.claude/agents/transcript-processor.md`
+
+---
+
+### video-analyzer
+
+Extracts metadata, duration, language info, and subtitles availability. Use PROACTIVELY for video inspection.
+
+**Model:** `sonnet`  
+**Location:** `.claude/agents/video-analyzer.md`
+
+---
+
 
 ---
 
 ## Statistics by Model
 
-- **sonnet**: 64 agents
-- **claude-opus-4-1**: 6 agents
-- **claude-sonnet-4-0**: 5 agents
+- **sonnet**: 68 agents
+- **claude-sonnet-4-0**: 10 agents
+- **claude-opus-4-1**: 9 agents
 - **opus**: 3 agents
 
 ---
