@@ -202,6 +202,19 @@
       },
       "license": "MIT",
       "keywords": ["interviews", "staff-engineer", "principal-engineer", "system-design", "coding", "behavioral", "leadership", "mock-interviews", "side-effects-engineering"]
+    },
+    {
+      "name": "yt-transcribe",
+      "description": "Download videos, fetch transcripts, and analyze YouTube content with yt-dlp (with JavaScript support), transcript API, and speech-to-text capabilities.",
+      "source": "./plugins/yt-transcribe",
+      "version": "1.0.0",
+      "category": "development",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["youtube", "transcript", "download", "yt-dlp", "captions", "video", "analysis", "speech-to-text", "whisper", "transcription", "media-processing"]
     }
   ],
   "categories": [
