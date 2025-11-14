@@ -1,8 +1,8 @@
 # DotClaude Plugin Marketplace
 
 [![Plugins](https://img.shields.io/badge/plugins-16-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
-[![Agents](https://img.shields.io/badge/agents-82-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
-[![Commands](https://img.shields.io/badge/commands-74+-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
+[![Agents](https://img.shields.io/badge/agents-90-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
+[![Commands](https://img.shields.io/badge/commands-82-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
 [![Documentation](https://img.shields.io/badge/docs-validated-success?style=flat-square)](https://github.com/dotclaude/marketplace/actions)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
 
@@ -327,8 +327,8 @@ Download videos with yt-dlp (with JavaScript support), fetch transcripts via You
 ## 📈 Statistics
 
 - **16 Plugins** covering the entire development lifecycle
-- **74+ Commands** for comprehensive workflows
-- **82 Specialized Agents** with voice differentiation
+- **82 Commands** for comprehensive workflows
+- **90 Specialized Agents** with voice differentiation
 - **Zero Configuration** - just install and use
 - **Security Hardened** - input validation, secrets management
 - **Production Ready** - used for real-world projects
@@ -374,4 +374,4 @@ MIT License - see [LICENSE](./LICENSE) file for details
 
 **Transform Claude Code into your complete development companion.** 🚀
 
-Install the marketplace and access 16 specialized plugins, 74+ commands, and 82 expert agents for every stage of development.
+Install the marketplace and access 16 specialized plugins, 82 commands, and 90 expert agents for every stage of development.
