@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <scenario-type> [--level=staff|principal] [--context=situation|analysis|response]
 description: Master Staff+ and Principal leadership scenarios for senior interviews

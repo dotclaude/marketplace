@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <problem-or-system> [--depth=basic|detailed|deep] [--focus=coding|system-design|both]
 description: Master side-effect decomposition for interview problem-solving

@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task
 argument-hint: <proposition-or-claim> [intensity-level]
 description: Structured debate with opposing personas examining a proposition from multiple angles through productive disagreement

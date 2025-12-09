@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <concept-or-problem> [--format=system-design|algorithm|architecture] [--scenario=explain|walkthrough|deep-dive]
 description: Master whiteboarding and technical communication for interviews

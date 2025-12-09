@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Write, Glob, Grep
 argument-hint: <challenge> <domain-scope> [--perspectives=<count>] [--integration=<method>] [--depth=<analysis-level>]
 description: Cross-domain expert analysis with cognitive harmonics optimization

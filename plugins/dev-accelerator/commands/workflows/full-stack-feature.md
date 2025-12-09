@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 ---
 
 Implement a full-stack feature across multiple platforms with coordinated agent orchestration:

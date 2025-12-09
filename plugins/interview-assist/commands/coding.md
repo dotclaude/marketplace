@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <problem-name> [--level=staff|principal] [--pattern=hash-map|sliding-window|etc] [--difficulty=easy|medium|hard]
 description: Practice coding problems with brute-force to optimized solution evolution

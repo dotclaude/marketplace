@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 allowed-tools: Task, Write, Read, Bash(*), Glob, Grep
 argument-hint: <concept> <learner-sophistication> [--approach=<pedagogical-method>] [--pathway=<learning-style>]
 description: Adaptive concept exploration with scaffolded discovery and multiple learning pathways

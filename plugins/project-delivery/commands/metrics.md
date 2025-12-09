@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <metric-type> [timeframe]
 description: Team metrics, velocity tracking, and performance analysis

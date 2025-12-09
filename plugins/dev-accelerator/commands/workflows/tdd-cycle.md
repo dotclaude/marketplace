@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 allowed-tools: Task, Read, Write, Bash(*), Grep, Glob
 argument-hint: <feature-requirement> [--complexity=<level>] [--learning-mode=<approach>] [--dissent-level=<intensity>]
 description: Test-Driven Development with multi-expert orchestration and adaptive learning integration

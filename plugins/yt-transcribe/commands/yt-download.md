@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-5
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <video-url> [--format format] [--audio-only] [--quality quality]
 description: Download a YouTube video with intelligent format selection

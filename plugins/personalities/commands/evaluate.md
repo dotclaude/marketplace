@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task
 argument-hint: <solution-or-proposal> [focus-areas]
 description: Multi-persona evaluation of solutions or proposals through diverse expert lenses with comprehensive assessment

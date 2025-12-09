@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <goal> [timeframe]
 description: Sprint planning, estimation, and agile ceremony facilitation

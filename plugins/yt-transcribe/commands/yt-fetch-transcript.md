@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-5
+model: sonnet
 allowed-tools: Task, Bash, Read, Write, WebFetch
 argument-hint: <video-url> [--method method] [--language lang] [--format format] [--quality quality]
 description: Fetch transcript using YouTube API or speech-to-text
