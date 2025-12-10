@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <question> [approach]
 description: Data analytics, visualization, and insights extraction

@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Write, Read, Bash(*), Glob, Grep
 argument-hint: <concept-area> [--mapping-style=<visualization>] [--depth=<exploration-level>] [--pathway=<learning-approach>]
 description: Visual understanding relationship mapping with conceptual bridge identification

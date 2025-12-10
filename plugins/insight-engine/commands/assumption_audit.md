@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <domain-or-proposal> [--audit-depth=<level>] [--challenge-method=<approach>] [--scope=<breadth>]
 description: Fundamental premise challenging with alternative framework generation

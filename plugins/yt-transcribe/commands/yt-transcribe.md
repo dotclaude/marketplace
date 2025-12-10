@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-5
 allowed-tools: Task, Bash, Read, Write, WebFetch
 argument-hint: <video-url> [--output-format format] [--summary] [--language lang]
 description: Transcribe a YouTube video and extract key insights

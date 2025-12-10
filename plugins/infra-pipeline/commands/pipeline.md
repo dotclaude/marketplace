@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <requirement> [platform]
 description: CI/CD pipeline design and optimization for modern platforms

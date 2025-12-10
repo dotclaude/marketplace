@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <feature-description> [--complexity=<level>] [--learning-focus=<aspect>] [--collaboration=<mode>]
 description: Intelligent feature development with multi-expert orchestration and adaptive learning

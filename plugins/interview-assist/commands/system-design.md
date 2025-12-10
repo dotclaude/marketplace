@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <system-name> [--depth=standard|deep] [--focus=architecture|scalability|trade-offs] [--generate-diagram=true|false]
 description: Design complete systems with WHY, WHAT, HOW, CONSIDERATIONS, and DEEP-DIVE framework

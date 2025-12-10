@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <learning-goal> [--style-detection=<method>] [--adaptation-frequency=<level>] [--pathway=<personalization-approach>]
 description: Dynamic learning style optimization with real-time pedagogical adaptation

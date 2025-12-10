@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <proposal> [--dissent-intensity=<level>] [--alternatives=<count>] [--focus=<challenge-area>]
 description: Structured disagreement optimization for robust solution development

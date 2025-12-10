@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Grep, Bash(*), Glob
 argument-hint: <data-domain> [--pattern-type=<category>] [--abstraction-level=<depth>] [--transfer-scope=<application-breadth>]
 description: Deep structural pattern recognition with cross-domain transfer identification

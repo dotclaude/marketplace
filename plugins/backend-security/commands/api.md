@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <requirement> [api-type]
 description: REST and GraphQL API design, implementation, and best practices

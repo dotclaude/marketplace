@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 ---
 
 Build the same feature across multiple platforms:

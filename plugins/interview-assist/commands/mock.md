@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <interview-type> [--level=staff|principal] [--company-type=faang|startup|enterprise] [--difficulty=medium|hard|very-hard] [--mode=lightweight|standard|comprehensive]
 description: Run realistic mock interviews with adaptive questioning and detailed performance feedback

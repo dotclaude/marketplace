@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 ---
 
 Build data-driven features with integrated pipelines and ML capabilities using specialized agents:

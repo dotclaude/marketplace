@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 ---
 
 Perform a comprehensive review using multiple specialized agents with explicit Task tool invocations:

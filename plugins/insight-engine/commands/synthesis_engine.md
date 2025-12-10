@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <sources...> [--synthesis-method=<approach>] [--output-format=<structure>] [--depth=<integration-level>]
 description: Multi-source insight integration with emergent pattern recognition

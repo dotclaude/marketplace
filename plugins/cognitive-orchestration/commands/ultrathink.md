@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <complex-problem> [--domain=<expertise>] [--challenge-level=<intensity>]
 description: Maximum cognitive diversity orchestrator with guest expert persona capabilities

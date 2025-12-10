@@ -1,5 +1,5 @@
 ---
-model: sonnet
+model: claude-sonnet-4-0
 allowed-tools: Task, Read, Bash(*), Grep, Glob, Write
 argument-hint: <problem-description> [--depth=<investigation-level>] [--style=<inquiry-approach>]
 description: Question-driven problem resolution through guided discovery methodology

@@ -1,5 +1,5 @@
 ---
-model: opus
+model: claude-opus-4-1
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <system-or-application> [--threat-model=<category>] [--compliance=<framework>] [--learning=<security-education>]
 description: Multi-expert security hardening with threat modeling and adaptive security education
