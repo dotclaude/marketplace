@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <requirement> [focus]
 description: Product strategy, roadmap planning, and prioritization

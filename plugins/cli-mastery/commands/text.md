@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <processing-task>
 description: Text processing with sed, awk, grep, and regex mastery

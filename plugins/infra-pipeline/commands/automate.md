@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Write, Read
 argument-hint: <task> [approach]
 description: Workflow automation and scripting for DevOps operations

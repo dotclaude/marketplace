@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 ---
 
 Optimize application performance end-to-end using specialized performance and optimization agents:

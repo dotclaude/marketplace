@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-5
+model: sonnet
 allowed-tools: Task, Bash, Read, Write, WebFetch
 argument-hint: <video-url> [--detailed] [--check-captions] [--quality-report]
 description: Analyze YouTube video metadata and technical properties

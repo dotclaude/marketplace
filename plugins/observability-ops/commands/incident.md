@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <incident> [phase]
 description: Incident response orchestration and SRE best practices

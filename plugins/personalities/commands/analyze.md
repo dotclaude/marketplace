@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task
 argument-hint: <problem-or-question> [complexity-level] [perspective-count]
 description: Multi-persona analysis using split-team framework with cognitive harmonics and productive disagreement

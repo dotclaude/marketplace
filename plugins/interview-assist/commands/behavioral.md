@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <question-topic> [--level=staff|principal] [--category=leadership|influence|conflict|ambiguity|failure|vision]
 description: Prepare for behavioral and competency interview questions using STAR method

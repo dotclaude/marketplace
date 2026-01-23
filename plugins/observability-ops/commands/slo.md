@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <service> [type]
 description: SLO/SLI definition and reliability tracking

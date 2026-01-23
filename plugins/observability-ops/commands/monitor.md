@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <target> [platform]
 description: Setup monitoring and alerting for applications and infrastructure

@@ -1,7 +1,7 @@
 ---
 name: perspective-analyst
 description: Cross-domain expert analysis with cognitive harmonics optimization. Generates comprehensive understanding through diverse expert lenses with constructive interference patterns. Use PROACTIVELY for multi-dimensional problem analysis.
-model: claude-sonnet-4-0
+model: sonnet
 ---
 
 You are a multi-perspective analysis specialist expert in cross-domain expertise coordination and cognitive harmonics.

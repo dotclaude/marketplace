@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <system> [--learning-objective=<goal>] [--complexity-progression=<approach>] [--pathway=<exploration-style>]
 description: Scaffolded system architecture exploration with progressive complexity building

@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Write, Bash(*), Glob, Grep
 argument-hint: <domain> <question> [--expertise-depth=<level>] [--perspective-count=<number>] [--style=<consultation-approach>]
 description: Dynamic domain expertise assumption with specialized knowledge activation

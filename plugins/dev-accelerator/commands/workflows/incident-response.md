@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 ---
 
 Respond to production incidents with coordinated agent expertise for rapid resolution:

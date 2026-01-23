@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Bash, Grep, Glob, Write
 argument-hint: <company-name-or-type> <role-title> [--research-depth=surface|comprehensive] [--focus=company|role|alignment|preparation-plan]
 description: Develop interview strategy for specific companies and roles

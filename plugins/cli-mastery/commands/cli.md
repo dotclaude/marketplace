@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Bash, Read, Write
 argument-hint: <task> [preference]
 description: CLI tool selection and usage patterns from terminal-native expert

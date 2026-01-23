@@ -1,5 +1,5 @@
 ---
-model: claude-opus-4-1
+model: opus
 ---
 
 Improve an existing agent based on recent performance:

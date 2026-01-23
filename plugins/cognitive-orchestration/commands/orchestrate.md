@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-0
+model: sonnet
 allowed-tools: Task, Read, Write, Glob, Grep
 argument-hint: <objective> <complexity-level> [specialists...] [--mode=<orchestration-pattern>]
 description: Dynamic multi-agent team assembly with adaptive collaboration protocols
