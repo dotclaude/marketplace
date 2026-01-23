@@ -4,7 +4,7 @@
 
 Total Commands: **82** across **16** plugins
 
-Last Updated: 2025-11-14 11:48:33
+Last Updated: 2026-01-23 11:37:15
 
 ---
 

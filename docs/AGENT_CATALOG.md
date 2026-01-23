@@ -4,7 +4,7 @@
 
 Total Agents: **90** across **16** plugins
 
-Last Updated: 2025-11-14 11:48:33
+Last Updated: 2026-01-23 11:37:15
 
 ---
 
@@ -38,7 +38,7 @@ Last Updated: 2025-11-14 11:48:33
 
 Dynamic learning style optimization with real-time pedagogical adaptation. Provides personalized mentoring that evolves based on learner progress and preferences. Use PROACTIVELY for personalized skill development and knowledge transfer.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/adaptive-mentor.md`
 
 ---
@@ -47,7 +47,7 @@ Dynamic learning style optimization with real-time pedagogical adaptation. Provi
 
 Adaptive concept exploration with scaffolded discovery and multiple learning pathways. Dynamically adjusts teaching approach based on learner sophistication and learning objectives. Use PROACTIVELY for complex concept explanation and skill building.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/concept-teacher.md`
 
 ---
@@ -56,7 +56,7 @@ Adaptive concept exploration with scaffolded discovery and multiple learning pat
 
 Visual understanding relationship mapping with conceptual bridge identification. Creates visual representations of knowledge relationships that reveal hidden connections and support learning transfer. Use PROACTIVELY for complex concept visualization.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/knowledge-mapper.md`
 
 ---
@@ -65,7 +65,7 @@ Visual understanding relationship mapping with conceptual bridge identification.
 
 Question-driven problem resolution through guided discovery methodology. Builds debugging intuition and systematic thinking skills through strategic questioning. Use PROACTIVELY for learning-oriented problem solving.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/socratic-guide.md`
 
 ---
@@ -188,7 +188,7 @@ sed/awk/grep regex master. Use PROACTIVELY for text processing challenges.
 
 Structured disagreement optimization for robust solution development. Systematically challenges proposals through evidence-based dissent and alternative generation. Use PROACTIVELY for assumption testing and solution strengthening.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/dissent-generator.md`
 
 ---
@@ -197,7 +197,7 @@ Structured disagreement optimization for robust solution development. Systematic
 
 Maximum cognitive diversity orchestrator with guest expert persona capabilities. Assembles 8-12+ expert personas for comprehensive problem analysis with structured disagreement and breakthrough thinking protocols. Use PROACTIVELY for complex multi-perspective challenges.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/master-orchestrator.md`
 
 ---
@@ -206,7 +206,7 @@ Maximum cognitive diversity orchestrator with guest expert persona capabilities.
 
 Cross-domain expert analysis with cognitive harmonics optimization. Generates comprehensive understanding through diverse expert lenses with constructive interference patterns. Use PROACTIVELY for multi-dimensional problem analysis.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/perspective-analyst.md`
 
 ---
@@ -215,7 +215,7 @@ Cross-domain expert analysis with cognitive harmonics optimization. Generates co
 
 Dynamic multi-agent team assembly with adaptive collaboration protocols. Coordinates 3-10 specialists through sequential, parallel, dialectical, hierarchical, or adaptive orchestration patterns. Use PROACTIVELY for structured multi-agent workflows.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/team-coordinator.md`
 
 ---
@@ -492,7 +492,7 @@ Infrastructure as Code specialist with AWS, Terraform, CDK expertise. Use PROACT
 
 Fundamental premise challenging with alternative framework generation. Systematically identifies and challenges assumptions to reveal hidden constraints and breakthrough opportunities. Use PROACTIVELY for paradigm questioning.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/assumption-auditor.md`
 
 ---
@@ -501,7 +501,7 @@ Fundamental premise challenging with alternative framework generation. Systemati
 
 Deep structural pattern recognition with cross-domain transfer identification. Identifies recurring frameworks and universal principles for enhanced problem-solving. Use PROACTIVELY for pattern recognition and knowledge transfer.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/pattern-discoverer.md`
 
 ---
@@ -510,7 +510,7 @@ Deep structural pattern recognition with cross-domain transfer identification. I
 
 Multi-source insight integration with emergent pattern recognition. Integrates knowledge from multiple sources to generate insights that transcend individual source limitations. Use PROACTIVELY for complex knowledge integration.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/synthesis-expert.md`
 
 ---
@@ -524,7 +524,7 @@ Multi-source insight integration with emergent pattern recognition. Integrates k
 
 Master behavioral and competency interview questions with STAR method. Includes Staff+ and Principal level story templates calibrated for senior engineers.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/behavioral-coach.md`
 
 ---
@@ -533,7 +533,7 @@ Master behavioral and competency interview questions with STAR method. Includes 
 
 Master coding interview problems with brute-force to optimized solution evolution. Includes complexity analysis, talking points, and pattern recognition. Perfect for Staff+ interview prep.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/coding-coach.md`
 
 ---
@@ -542,7 +542,7 @@ Master coding interview problems with brute-force to optimized solution evolutio
 
 Develop interview strategy for specific companies and roles. Analyze company type, predict questions, create preparation plans, and align your story to their needs.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/interview-strategist.md`
 
 ---
@@ -551,7 +551,7 @@ Develop interview strategy for specific companies and roles. Analyze company typ
 
 Master Staff+ and Principal leadership scenarios. Handle technical strategy, influence without authority, difficult people situations, and organizational impact.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/leadership-scenarios-coach.md`
 
 ---
@@ -560,7 +560,7 @@ Master Staff+ and Principal leadership scenarios. Handle technical strategy, inf
 
 Run realistic mock interviews with adaptive questioning, real-time feedback, and performance scoring. Combines all interview skills in a full simulation.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/mock-interviewer.md`
 
 ---
@@ -569,7 +569,7 @@ Run realistic mock interviews with adaptive questioning, real-time feedback, and
 
 Master side-effect decomposition methodology from your engineering philosophy. Learn to dissolve problems by composing primitives with emergent properties. Perfect for Staff+ system design interviews.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/side-effects-engineer.md`
 
 ---
@@ -578,7 +578,7 @@ Master side-effect decomposition methodology from your engineering philosophy. L
 
 Design complete systems with WHY, WHAT, HOW, CONSIDERATIONS, and DEEP-DIVE framework. Generates mermaid diagrams with visual system architecture. Perfect for Staff+ system design interviews.
 
-**Model:** `claude-opus-4-1`  
+**Model:** `opus`  
 **Location:** `.claude/agents/system-design-architect.md`
 
 ---
@@ -587,7 +587,7 @@ Design complete systems with WHY, WHAT, HOW, CONSIDERATIONS, and DEEP-DIVE frame
 
 Master whiteboarding and technical communication for interviews. Learn to explain complex concepts clearly, handle clarifying questions, and pace your thinking.
 
-**Model:** `claude-sonnet-4-0`  
+**Model:** `sonnet`  
 **Location:** `.claude/agents/technical-communicator.md`
 
 ---
@@ -924,10 +924,8 @@ Extracts metadata, duration, language info, and subtitles availability. Use PROA
 
 ## Statistics by Model
 
-- **sonnet**: 68 agents
-- **claude-sonnet-4-0**: 10 agents
-- **claude-opus-4-1**: 9 agents
-- **opus**: 3 agents
+- **sonnet**: 78 agents
+- **opus**: 12 agents
 
 ---
 
