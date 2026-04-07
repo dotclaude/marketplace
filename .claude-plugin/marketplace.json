@@ -215,6 +215,19 @@
       },
       "license": "MIT",
       "keywords": ["youtube", "transcript", "download", "yt-dlp", "captions", "video", "analysis", "speech-to-text", "whisper", "transcription", "media-processing"]
+    },
+    {
+      "name": "doc-writer",
+      "description": "Multi-persona technical documentation authoring using split-team framework. Assembles specialized documentation teams that research, draft, review, and refine API guides, wiki pages, system overviews, trace documents, and onboarding guides through coordinated workflow phases.",
+      "source": "./plugins/doc-writer",
+      "version": "1.0.0",
+      "category": "productivity",
+      "author": {
+        "name": "DotClaude",
+        "url": "https://github.com/dotclaude"
+      },
+      "license": "MIT",
+      "keywords": ["documentation", "api-docs", "wiki", "technical-writing", "knowledge-base", "multi-persona", "split-team"]
     }
   ],
   "categories": [

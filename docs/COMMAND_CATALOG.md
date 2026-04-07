@@ -2,9 +2,9 @@
 
 **Auto-generated command reference for DotClaude Marketplace**
 
-Total Commands: **82** across **16** plugins
+Total Commands: **85** across **17** plugins
 
-Last Updated: 2026-01-23 11:37:15
+Last Updated: 2026-04-07 15:59:19
 
 ---
 
@@ -16,6 +16,7 @@ Last Updated: 2026-01-23 11:37:15
 - [Cognitive Orchestration](#cognitive-orchestration) (4 commands)
 - [Data Intelligence](#data-intelligence) (4 commands)
 - [Dev Accelerator](#dev-accelerator) (15 commands)
+- [Doc Writer](#doc-writer) (3 commands)
 - [Frontend Excellence](#frontend-excellence) (4 commands)
 - [Infra Pipeline](#infra-pipeline) (4 commands)
 - [Insight Engine](#insight-engine) (3 commands)
@@ -529,6 +530,50 @@ You are a workflow automation expert specializing in creating efficient CI/CD pi
 **Example:**
 ```bash
 /workflows:workflow-automate <args>
+```
+
+---
+
+## Doc Writer
+
+**Plugin:** `doc-writer`  
+**Commands:** 3
+
+### `/commands:api-doc`
+
+Shortcut for producing API Reference Guides. Pre-selects the API document type and assembles an API-focused documentation team to produce complete endpoint documentation with schemas, authentication flows, error codes, and working code examples.
+
+**Location:** `.claude/commands/doc-writer/commands/api-doc.md`
+
+**Example:**
+```bash
+/commands:api-doc <args>
+```
+
+---
+
+### `/commands:document`
+
+Orchestrate high-quality technical documentation through a team of specialized documentation personas. The team researches, drafts, reviews, and refines documents through structured before/during/after workflow phases.
+
+**Location:** `.claude/commands/doc-writer/commands/document.md`
+
+**Example:**
+```bash
+/commands:document <args>
+```
+
+---
+
+### `/commands:wiki`
+
+Shortcut for producing internal wiki pages and knowledge base articles. Pre-selects the Wiki document type and assembles a knowledge-base focused documentation team to produce well-structured internal articles, runbooks, how-to guides, and decision records.
+
+**Location:** `.claude/commands/doc-writer/commands/wiki.md`
+
+**Example:**
+```bash
+/commands:wiki <args>
 ```
 
 ---
