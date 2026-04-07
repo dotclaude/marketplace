@@ -18,6 +18,10 @@ on:
       - 'scripts/validate_catalog.py'
       - '.github/workflows/validate-docs.yml'
 
+permissions:
+  pull-requests: write
+  issues: write
+
 jobs:
   validate:
     name: Validate Plugin Catalog
