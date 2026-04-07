@@ -2,9 +2,9 @@
 
 **Auto-generated agent reference for DotClaude Marketplace**
 
-Total Agents: **90** across **16** plugins
+Total Agents: **91** across **17** plugins
 
-Last Updated: 2026-01-23 11:37:15
+Last Updated: 2026-04-07 15:59:19
 
 ---
 
@@ -16,6 +16,7 @@ Last Updated: 2026-01-23 11:37:15
 - [Cognitive Orchestration](#cognitive-orchestration) (4 agents)
 - [Data Intelligence](#data-intelligence) (5 agents)
 - [Dev Accelerator](#dev-accelerator) (12 agents)
+- [Doc Writer](#doc-writer) (1 agents)
 - [Frontend Excellence](#frontend-excellence) (5 agents)
 - [Infra Pipeline](#infra-pipeline) (5 agents)
 - [Insight Engine](#insight-engine) (3 agents)
@@ -380,6 +381,20 @@ Master TypeScript with advanced types, generics, and strict type safety. Handles
 
 **Model:** `sonnet`  
 **Location:** `.claude/agents/typescript-pro.md`
+
+---
+
+## Doc Writer
+
+**Plugin:** `doc-writer`  
+**Agents:** 1
+
+### doc-coordinator
+
+Orchestrates multi-persona documentation authoring using split-team framework principles. Assembles optimal documentation teams, manages before/during/after workflow phases, and coordinates research, drafting, review, and refinement of technical documents. Use PROACTIVELY for any documentation task requiring structured, high-quality output.
+
+**Model:** `sonnet`  
+**Location:** `.claude/agents/doc-coordinator.md`
 
 ---
 
@@ -924,7 +939,7 @@ Extracts metadata, duration, language info, and subtitles availability. Use PROA
 
 ## Statistics by Model
 
-- **sonnet**: 78 agents
+- **sonnet**: 79 agents
 - **opus**: 12 agents
 
 ---

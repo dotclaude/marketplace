@@ -1,0 +1,19 @@
+{
+  "name": "doc-writer",
+  "version": "1.0.0",
+  "description": "Multi-persona technical documentation authoring using split-team framework. Assembles specialized documentation teams that research, draft, review, and refine API guides, wiki pages, system overviews, trace documents, and onboarding guides through coordinated before/during/after workflow phases.",
+  "author": {
+    "name": "DotClaude",
+    "url": "https://github.com/dotclaude"
+  },
+  "repository": "https://github.com/dotclaude/marketplace",
+  "keywords": [
+    "documentation",
+    "api-docs",
+    "wiki",
+    "technical-writing",
+    "knowledge-base",
+    "multi-persona",
+    "split-team"
+  ]
+}
