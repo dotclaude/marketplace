@@ -375,3 +375,5 @@ MIT License - see [LICENSE](./LICENSE) file for details
 **Transform Claude Code into your complete development companion.** 🚀
 
 Install the marketplace and access 16 specialized plugins, 82 commands, and 90 expert agents for every stage of development.
+
+-- edit
