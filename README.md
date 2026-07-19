@@ -1,25 +1,25 @@
 # DotClaude Plugin Marketplace
 
-[![Plugins](https://img.shields.io/badge/plugins-16-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
-[![Agents](https://img.shields.io/badge/agents-90-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
-[![Commands](https://img.shields.io/badge/commands-82-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
+[![Plugins](https://img.shields.io/badge/plugins-18-blue?style=flat-square)](https://github.com/dotclaude/marketplace/tree/main/plugins)
+[![Agents](https://img.shields.io/badge/agents-91-green?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Agent-Reference)
+[![Commands](https://img.shields.io/badge/commands-85-orange?style=flat-square)](https://github.com/dotclaude/marketplace/wiki/Command-Reference)
 [![Documentation](https://img.shields.io/badge/docs-validated-success?style=flat-square)](https://github.com/dotclaude/marketplace/actions)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
 
-**Complete development ecosystem with 16 specialized plugins**
+**Complete development ecosystem with 18 specialized plugins**
 
 Transform Claude Code into a comprehensive cognitive amplification system covering everything from infrastructure to UX, data processing to project management.
 
 ## 🚀 Quick Start
 
 ```bash
-# Install the complete marketplace (all 15 plugins)
+# Install the complete marketplace (all 18 plugins)
 /plugin marketplace add dotclaude/marketplace
 
 # All plugins automatically available!
 ```
 
-## 📦 Complete Plugin Ecosystem (16 Plugins)
+## 📦 Complete Plugin Ecosystem (18 Plugins)
 
 ### Core Intelligence & Learning (1-6)
 
@@ -165,7 +165,7 @@ Scrum, Kanban, sprint planning, roadmaps, retrospectives, team metrics, and stak
 
 ---
 
-### Developer Tools (15-16)
+### Developer Tools & Social Workflows (15-17)
 
 #### 15. [CLI Mastery](./plugins/cli-mastery) ⭐ NEW
 **Command-line excellence from a 10+ year terminal native**
@@ -184,6 +184,13 @@ Download videos with yt-dlp (with JavaScript support), fetch transcripts via You
 
 **Key Commands**: `/yt-analyze`, `/yt-download`, `/yt-transcribe`, `/yt-fetch-transcript`
 **Agents**: video-analyzer, media-downloader, transcript-fetcher, transcript-processor
+
+#### 17. [Hermes Tweet](./plugins/hermes-tweet) ⭐ NEW
+**Hermes Agent X/Twitter workflows with guarded read and action guidance**
+
+Guide social discovery, public tweet reads, and explicitly approved write actions with Hermes Tweet.
+
+**Key Skill**: `hermes-tweet`
 
 ---
 
@@ -236,7 +243,7 @@ Download videos with yt-dlp (with JavaScript support), fetch transcripts via You
 
 ### Option 1: Complete Marketplace (Recommended)
 ```bash
-# Install all 16 plugins at once
+# Install all 18 plugins at once
 /plugin marketplace add dotclaude/marketplace
 ```
 
@@ -326,9 +333,9 @@ Download videos with yt-dlp (with JavaScript support), fetch transcripts via You
 
 ## 📈 Statistics
 
-- **16 Plugins** covering the entire development lifecycle
-- **82 Commands** for comprehensive workflows
-- **90 Specialized Agents** with voice differentiation
+- **18 Plugins** covering the entire development lifecycle
+- **85 Commands** for comprehensive workflows
+- **91 Specialized Agents** with voice differentiation
 - **Zero Configuration** - just install and use
 - **Security Hardened** - input validation, secrets management
 - **Production Ready** - used for real-world projects
@@ -374,4 +381,4 @@ MIT License - see [LICENSE](./LICENSE) file for details
 
 **Transform Claude Code into your complete development companion.** 🚀
 
-Install the marketplace and access 16 specialized plugins, 82 commands, and 90 expert agents for every stage of development.
+Install the marketplace and access 18 specialized plugins, 85 commands, and 91 expert agents for every stage of development.

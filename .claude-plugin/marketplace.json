@@ -228,6 +228,19 @@
       },
       "license": "MIT",
       "keywords": ["documentation", "api-docs", "wiki", "technical-writing", "knowledge-base", "multi-persona", "split-team"]
+    },
+    {
+      "name": "hermes-tweet",
+      "description": "Native Hermes Agent X/Twitter plugin for Xquik automation with read-first workflows and approval-gated actions. Not affiliated with X Corp.",
+      "source": "./plugins/hermes-tweet",
+      "version": "0.1.8",
+      "category": "productivity",
+      "author": {
+        "name": "Xquik",
+        "url": "https://github.com/Xquik-dev"
+      },
+      "license": "MIT",
+      "keywords": ["hermes-agent", "twitter", "x-twitter", "social-media", "tweet", "xquik", "automation"]
     }
   ],
   "categories": [

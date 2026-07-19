@@ -5,15 +5,37 @@ Generates a report showing current counts and identifies documentation discrepan
 """
 
 import json
+import re
 import sys
-from pathlib import Path
 from datetime import datetime
-from collections import defaultdict
+from pathlib import Path
 
 # Base directory - plugins folder
 MARKETPLACE_ROOT = Path(__file__).parent.parent
 PLUGINS_DIR = MARKETPLACE_ROOT / "plugins"
-WIKI_DIR = MARKETPLACE_ROOT / "wiki"
+
+
+README_COUNT_PATTERNS = {
+    "plugins": [
+        re.compile(r"badge/plugins-(\d+)-"),
+        re.compile(r"with (\d+) specialized plugins", re.IGNORECASE),
+        re.compile(r"Plugin Ecosystem \((\d+) Plugins\)", re.IGNORECASE),
+        re.compile(r"Install (?:the complete marketplace \(all |all )(\d+) plugins", re.IGNORECASE),
+        re.compile(r"- \*\*(\d+) Plugins\*\* covering", re.IGNORECASE),
+        re.compile(r"access (\d+) specialized plugins", re.IGNORECASE),
+    ],
+    "agents": [
+        re.compile(r"badge/agents-(\d+)-"),
+        re.compile(r"- \*\*(\d+) Specialized Agents\*\*", re.IGNORECASE),
+        re.compile(r"and (\d+) expert agents", re.IGNORECASE),
+    ],
+    "commands": [
+        re.compile(r"badge/commands-(\d+)-"),
+        re.compile(r"- \*\*(\d+) Commands\*\*", re.IGNORECASE),
+        re.compile(r"plugins, (\d+) commands", re.IGNORECASE),
+    ],
+}
+
 
 def count_plugin_files(plugin_path, subdir):
     """Count markdown files in a plugin's agents or commands directory (including subdirectories)."""
@@ -46,25 +68,43 @@ def scan_plugins():
 
     return plugins, total_agents, total_commands
 
-def find_documentation_claims(file_path, search_patterns):
-    """Find lines in documentation that make claims about counts."""
+def find_readme_count_discrepancies(file_path, expected_counts):
+    """Find stale marketplace totals in the README summary."""
     if not file_path.exists():
-        return []
+        return [
+            {
+                "line": 0,
+                "content": "README.md is missing",
+                "kind": "readme",
+                "claimed": None,
+                "expected": None,
+            }
+        ]
 
     content = file_path.read_text()
     lines = content.split('\n')
-    claims = []
+    discrepancies = []
 
-    for i, line in enumerate(lines, 1):
-        for pattern in search_patterns:
-            if pattern.lower() in line.lower():
-                claims.append({
-                    "line": i,
-                    "content": line.strip()
-                })
-                break
+    for line_number, line in enumerate(lines, 1):
+        for kind, patterns in README_COUNT_PATTERNS.items():
+            for pattern in patterns:
+                match = pattern.search(line)
+                if match is None:
+                    continue
 
-    return claims
+                claimed = int(match.group(1))
+                expected = expected_counts[kind]
+                if claimed != expected:
+                    discrepancies.append({
+                        "line": line_number,
+                        "content": line.strip(),
+                        "kind": kind,
+                        "claimed": claimed,
+                        "expected": expected,
+                    })
+
+    return discrepancies
+
 
 def generate_report(plugins, total_agents, total_commands):
     """Generate a comprehensive validation report."""
@@ -99,30 +139,29 @@ def generate_report(plugins, total_agents, total_commands):
     print("🔍 DOCUMENTATION CLAIMS ANALYSIS")
     print("-" * 80)
 
-    # Check documentation files for problematic claims
-    search_patterns = ["100+", "100 ", "hundred"]
-    files_to_check = [
-        ("README.md", MARKETPLACE_ROOT / "README.md"),
-        ("wiki/Home.md", WIKI_DIR / "Home.md"),
-        ("wiki/Plugin-Catalog.md", WIKI_DIR / "Plugin-Catalog.md")
-    ]
+    expected_counts = {
+        "plugins": plugin_count,
+        "agents": total_agents,
+        "commands": total_commands,
+    }
+    discrepancies = find_readme_count_discrepancies(
+        MARKETPLACE_ROOT / "README.md",
+        expected_counts,
+    )
 
-    discrepancies_found = False
-    for file_label, file_path in files_to_check:
-        claims = find_documentation_claims(file_path, search_patterns)
-        if claims:
-            discrepancies_found = True
-            print(f"\n{file_label}:")
-            for claim in claims:
-                print(f"  Line {claim['line']}: {claim['content']}")
-
-    if not discrepancies_found:
+    if not discrepancies:
         print("✅ No documentation discrepancies found!")
     else:
-        print("\n⚠️  Found potential documentation discrepancies")
-        print("    Review lines above and update with actual counts:")
-        print(f"    - Use '{total_agents} specialized agents' or '{total_agents} agents'")
-        print(f"    - Use '{total_commands} commands' or '70+ commands'")
+        print("\nREADME.md:")
+        for discrepancy in discrepancies:
+            print(
+                f"  Line {discrepancy['line']}: "
+                f"{discrepancy['kind']} claims {discrepancy['claimed']}, "
+                f"expected {discrepancy['expected']}"
+            )
+            print(f"    {discrepancy['content']}")
+        print("\n⚠️  Found documentation discrepancies")
+        print("    Update README marketplace totals to match the catalog.")
 
     print()
     print("=" * 80)
@@ -133,7 +172,7 @@ def generate_report(plugins, total_agents, total_commands):
         "total_commands": total_commands,
         "plugins": plugins,
         "timestamp": timestamp,
-        "has_discrepancies": discrepancies_found
+        "has_discrepancies": bool(discrepancies),
     }
 
 def save_json_report(data, output_path):
